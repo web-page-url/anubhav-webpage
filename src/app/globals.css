@@ -346,6 +346,14 @@
     aspect-ratio: 16/9;
   }
 
+  /* Enhanced mobile gallery for many projects */
+  @media (max-width: 480px) {
+    .gallery-grid {
+      gap: 0.75rem;
+      padding: 0 0.5rem;
+    }
+  }
+
   /* Lightbox Mobile Optimizations */
   .lightbox-modal {
     padding: 1rem;

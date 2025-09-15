@@ -98,66 +98,187 @@ export const ImageGallery = () => {
       tech: ["React", "Creative", "Design Tools"],
       color: "from-neon-magenta to-neon-purple",
       url: "https://sticker-magic.vercel.app/"
+    },
+    {
+      id: 6,
+      src: "/img-6.png",
+      alt: "Better Prompt Tool - AI Prompt Optimizer",
+      title: "Better Prompt Tool",
+      description: "AI-powered prompt optimization tool that helps users create better prompts for enhanced AI interactions and responses",
+      category: "AI/ML",
+      tech: ["AI", "Optimization", "Prompt Engineering"],
+      color: "from-neon-cyan to-neon-purple",
+      url: "https://better-prompt-alpha.vercel.app/"
+    },
+    {
+      id: 7,
+      src: "/img-7.png",
+      alt: "3D Shooting Game - Three.js",
+      title: "3D Shooting Game",
+      description: "Immersive 3D shooting game built with Three.js featuring advanced graphics, physics, and interactive gameplay",
+      category: "Gaming",
+      tech: ["3D", "Game", "Three.js", "WebGL"],
+      color: "from-neon-purple to-neon-magenta",
+      url: "https://anubhav-3d-shooting-game.netlify.app/"
+    },
+    {
+      id: 8,
+      src: "/img-8.png",
+      alt: "AI Doctor 24/7 - Healthcare Assistant",
+      title: "AI Doctor 24/7",
+      description: "AI-powered healthcare assistant providing 24/7 medical guidance, symptom analysis, and health information",
+      category: "Healthcare",
+      tech: ["AI", "Healthcare", "Medical"],
+      color: "from-neon-blue to-neon-cyan",
+      url: "https://doctor247.netlify.app/"
+    },
+    {
+      id: 9,
+      src: "/img-9.png",
+      alt: "Text-to-Speech Converter",
+      title: "Text-to-Speech Converter",
+      description: "Advanced text-to-speech conversion tool with multiple voice options, languages, and customization features",
+      category: "Tools",
+      tech: ["Audio", "AI", "Speech Synthesis"],
+      color: "from-neon-magenta to-neon-blue",
+      url: "https://anubhav-text-to-speech.netlify.app/"
+    },
+    {
+      id: 10,
+      src: "/img-10.png",
+      alt: "QR Code Generator",
+      title: "QR Code Generator",
+      description: "Custom QR code generator with advanced styling options, colors, and design customization features",
+      category: "Tools",
+      tech: ["QR", "Generator", "Design"],
+      color: "from-neon-purple to-neon-blue",
+      url: "https://123anubhav.github.io/qr_link/"
+    },
+    {
+      id: 11,
+      src: "/img-11.png",
+      alt: "GitHub User Search App",
+      title: "GitHub User Search",
+      description: "Advanced GitHub user search and profile analyzer with detailed statistics and repository insights",
+      category: "Development",
+      tech: ["GitHub", "Search", "Analytics"],
+      color: "from-neon-cyan to-neon-magenta",
+      url: "https://anubhav-github-users-search.netlify.app/"
+    },
+    {
+      id: 12,
+      src: "/img-12.png",
+      alt: "AI Travel Assistant Chatbot",
+      title: "AI Travel Assistant",
+      description: "Smart travel planning chatbot with AI recommendations for destinations, bookings, and travel tips",
+      category: "AI/ML",
+      tech: ["AI", "Travel", "Chatbot"],
+      color: "from-neon-blue to-neon-purple",
+      url: "https://anubhav-holiday-socho-ai.netlify.app/"
+    },
+    {
+      id: 13,
+      src: "/img-13.png",
+      alt: "AI Powered Python Learning App",
+      title: "Python Learning App",
+      description: "AI-powered Python learning platform with interactive lessons, code challenges, and personalized learning paths",
+      category: "Education",
+      tech: ["AI", "Education", "Python"],
+      color: "from-neon-magenta to-neon-cyan",
+      url: "https://next-gen-python-learn.vercel.app/"
+    },
+    {
+      id: 14,
+      src: "/img-14.png",
+      alt: "Portfolio Website",
+      title: "Portfolio Website",
+      description: "Professional portfolio website showcasing projects, skills, and experience with modern design and animations",
+      category: "Portfolio",
+      tech: ["Portfolio", "React", "Next.js"],
+      color: "from-neon-cyan to-neon-magenta",
+      url: "https://anubhav-webpage.netlify.app/"
+    },
+    {
+      id: 15,
+      src: "/img-15.png",
+      alt: "Interactive Data Visualization",
+      title: "Data Visualization Dashboard",
+      description: "Interactive data visualization dashboard with real-time charts, graphs, and analytics capabilities",
+      category: "Data Science",
+      tech: ["Data Science", "Visualization", "Analytics"],
+      color: "from-neon-purple to-neon-blue",
+      url: "#"
+    },
+    {
+      id: 16,
+      src: "/img-16.png",
+      alt: "Mobile App Development Showcase",
+      title: "Mobile App Collection",
+      description: "Collection of mobile applications built for Android with modern UI/UX and advanced features",
+      category: "Mobile",
+      tech: ["Mobile", "Android", "React Native"],
+      color: "from-neon-blue to-neon-purple",
+      url: "#"
     }
   ];
 
-  // Additional projects for the mobile view and expanded gallery
+  // Additional projects for specialized showcases
   const allProjects = [
     {
-      name: "Better Prompt Tool",
-      description: "AI-powered prompt optimization tool for better AI interactions",
-      tech: ["AI", "Optimization"],
-      url: "https://better-prompt-alpha.vercel.app/",
-      category: "AI/ML"
+      name: "Advanced ML Models",
+      description: "Machine learning models for predictive analytics and data insights",
+      tech: ["Python", "TensorFlow", "Scikit-learn"],
+      url: "#",
+      category: "Data Science"
     },
     {
-      name: "3D Shooting Game",
-      description: "Immersive 3D shooting game built with Three.js",
-      tech: ["3D", "Game", "Three.js"],
-      url: "https://anubhav-3d-shooting-game.netlify.app/",
-      category: "Gaming"
+      name: "Blockchain DApp",
+      description: "Decentralized application with smart contract integration",
+      tech: ["Blockchain", "Web3", "Smart Contracts"],
+      url: "#",
+      category: "Blockchain"
     },
     {
-      name: "AI Doctor 24/7",
-      description: "AI-powered healthcare assistant for medical queries",
-      tech: ["AI", "Healthcare"],
-      url: "https://doctor247.netlify.app/",
-      category: "Healthcare"
+      name: "IoT Dashboard",
+      description: "Internet of Things monitoring and control dashboard",
+      tech: ["IoT", "Sensors", "Real-time"],
+      url: "#",
+      category: "IoT"
     },
     {
-      name: "Text-to-Speech Converter",
-      description: "Advanced text-to-speech conversion with multiple voices",
-      tech: ["Audio", "AI"],
-      url: "https://anubhav-text-to-speech.netlify.app/",
-      category: "AI/ML"
+      name: "E-commerce Platform",
+      description: "Full-featured online marketplace with payment integration",
+      tech: ["E-commerce", "Payments", "Commerce"],
+      url: "#",
+      category: "E-commerce"
     },
     {
-      name: "QR Code Generator",
-      description: "Custom QR code generator with styling options",
-      tech: ["QR", "Generator"],
-      url: "https://123anubhav.github.io/qr_link/",
-      category: "Tools"
+      name: "Cloud Infrastructure",
+      description: "Scalable cloud architecture and deployment solutions",
+      tech: ["AWS", "Cloud", "Infrastructure"],
+      url: "#",
+      category: "DevOps"
     },
     {
-      name: "GitHub User Search",
-      description: "Advanced GitHub user search and profile analyzer",
-      tech: ["GitHub", "Search"],
-      url: "https://anubhav-github-users-search.netlify.app/",
-      category: "Development"
+      name: "AR/VR Experience",
+      description: "Augmented and Virtual Reality interactive experiences",
+      tech: ["AR", "VR", "3D", "Interactive"],
+      url: "#",
+      category: "AR/VR"
     },
     {
-      name: "AI Travel Assistant",
-      description: "Smart travel planning chatbot with AI recommendations",
-      tech: ["AI", "Travel"],
-      url: "https://anubhav-holiday-socho-ai.netlify.app/",
-      category: "AI/ML"
+      name: "API Gateway",
+      description: "Comprehensive API management and documentation platform",
+      tech: ["API", "Microservices", "Documentation"],
+      url: "#",
+      category: "Backend"
     },
     {
-      name: "Python Learning App",
-      description: "AI-powered Python learning platform with interactive lessons",
-      tech: ["AI", "Education"],
-      url: "https://next-gen-python-learn.vercel.app/",
-      category: "Education"
+      name: "Security Suite",
+      description: "Advanced cybersecurity tools and monitoring systems",
+      tech: ["Security", "Monitoring", "Cybersecurity"],
+      url: "#",
+      category: "Security"
     }
   ];
 
@@ -170,13 +291,13 @@ export const ImageGallery = () => {
             Featured <span className="gradient-text animate-neon-flicker">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani">
-            A showcase of my innovative projects spanning AI, web development, gaming, and creative solutions.
-            Click on any project to explore the live demos and see my work in action.
+            A comprehensive showcase of 16 innovative projects spanning AI/ML, web development, gaming, healthcare,
+            and creative solutions. Click on any project to explore the live demos and see my work in action.
           </p>
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gallery-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gallery-grid">
           {images.map((image, index) => (
             <Card
               key={image.id}
@@ -351,43 +472,55 @@ export const ImageGallery = () => {
             {/* Mobile Additional Projects Preview */}
             <div className="mt-12">
               <h4 className="font-orbitron font-bold text-xl mb-6 text-center text-neon-cyan animate-cyber-glow">
-                More Projects
+                Featured Projects
               </h4>
               <div className="space-y-4">
-                {allProjects.slice(0, 4).map((project, index) => (
+                {images.slice(5, 11).map((image, index) => (
                   <Card
                     key={`mobile-all-${index}`}
                     className="cyber-card hover-lift animate-cyber-fade-up"
                     style={{ animationDelay: `${0.8 + index * 0.1}s` }}
                   >
                     <CardContent className="p-4">
-                      <div className="flex items-center gap-3">
-                        {/* Project Icon */}
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta flex items-center justify-center animate-cyber-pulse">
-                          {project.category === "AI/ML" && <span className="text-cyber-dark text-sm">🤖</span>}
-                          {project.category === "Gaming" && <span className="text-cyber-dark text-sm">🎮</span>}
-                          {project.category === "Healthcare" && <span className="text-cyber-dark text-sm">⚕️</span>}
-                          {project.category === "Tools" && <span className="text-cyber-dark text-sm">🔧</span>}
+                    <div className="flex gap-4">
+                      {/* Mobile Image */}
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 relative rounded-lg overflow-hidden">
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            className="object-cover"
+                            sizes="64px"
+                          />
                         </div>
-
-                        {/* Project Info */}
-                        <div className="flex-1 min-w-0">
-                          <h5 className="font-orbitron font-bold text-sm text-neon-cyan mb-1">
-                            {project.name}
-                          </h5>
-                          <Badge className="text-xs bg-neon-purple/20 text-neon-purple border-neon-purple/50 mb-2">
-                            {project.category}
-                          </Badge>
-                        </div>
-
-                        {/* Link */}
-                        <Button variant="outline" size="sm" className="hover-glow cyber-btn-outline" asChild>
-                          <a href={project.url} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-3 h-3" />
-                          </a>
-                        </Button>
                       </div>
-                    </CardContent>
+
+                      {/* Project Info */}
+                      <div className="flex-1 min-w-0">
+                        <h5 className="font-orbitron font-bold text-sm text-neon-cyan mb-1">
+                          {image.title}
+                        </h5>
+                        <Badge className="text-xs bg-neon-purple/20 text-neon-purple border-neon-purple/50 mb-2">
+                          {image.category}
+                        </Badge>
+                        <div className="flex flex-wrap gap-1">
+                          {image.tech.slice(0, 2).map((tech, i) => (
+                            <Badge key={i} variant="outline" className="text-xs border-neon-cyan/30 text-neon-cyan">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Link */}
+                      <Button variant="outline" size="sm" className="hover-glow cyber-btn-outline ml-2" asChild>
+                        <a href={image.url} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
                   </Card>
                 ))}
               </div>
@@ -402,11 +535,11 @@ export const ImageGallery = () => {
               All Projects
             </h3>
             <p className="text-muted-foreground font-rajdhani max-w-2xl mx-auto">
-              Explore my complete portfolio of innovative solutions spanning AI, web development, and creative applications
+              Explore additional innovative solutions including blockchain, IoT, AR/VR, and advanced backend systems
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {allProjects.map((project, index) => (
               <Card
                 key={index}
@@ -417,12 +550,14 @@ export const ImageGallery = () => {
                   <div className="flex items-start gap-4">
                     {/* Project Icon */}
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta flex items-center justify-center animate-cyber-pulse">
-                      {project.category === "AI/ML" && <span className="text-cyber-dark text-lg">🤖</span>}
-                      {project.category === "Gaming" && <span className="text-cyber-dark text-lg">🎮</span>}
-                      {project.category === "Healthcare" && <span className="text-cyber-dark text-lg">⚕️</span>}
-                      {project.category === "Tools" && <span className="text-cyber-dark text-lg">🔧</span>}
-                      {project.category === "Development" && <span className="text-cyber-dark text-lg">💻</span>}
-                      {project.category === "Education" && <span className="text-cyber-dark text-lg">📚</span>}
+                      {project.category === "Data Science" && <span className="text-cyber-dark text-lg">📊</span>}
+                      {project.category === "Blockchain" && <span className="text-cyber-dark text-lg">⛓️</span>}
+                      {project.category === "IoT" && <span className="text-cyber-dark text-lg">📡</span>}
+                      {project.category === "E-commerce" && <span className="text-cyber-dark text-lg">🛒</span>}
+                      {project.category === "DevOps" && <span className="text-cyber-dark text-lg">☁️</span>}
+                      {project.category === "AR/VR" && <span className="text-cyber-dark text-lg">🥽</span>}
+                      {project.category === "Backend" && <span className="text-cyber-dark text-lg">⚙️</span>}
+                      {project.category === "Security" && <span className="text-cyber-dark text-lg">🔒</span>}
                     </div>
 
                     {/* Project Details */}
