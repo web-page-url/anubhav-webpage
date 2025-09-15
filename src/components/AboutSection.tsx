@@ -30,11 +30,11 @@ export const AboutSection = () => {
     <section id="about" className="py-20 px-6">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About <span className="gradient-text">Me</span>
+        <div className="text-center mb-16 animate-cyber-fade-up">
+          <h2 className="font-orbitron font-bold mb-6 animate-cyber-glow">
+            About <span className="gradient-text animate-neon-flicker">Me</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani">
             Discover the story, passion, and dedication behind my journey as a
             content creator and full-stack developer.
           </p>
@@ -43,13 +43,13 @@ export const AboutSection = () => {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Profile Card */}
           <div className="lg:col-span-1">
-            <Card className="glass-card hover-lift animate-fade-up">
+            <Card className="cyber-card hover-lift animate-cyber-fade-up">
               <CardContent className="p-8 text-center">
                 {/* Profile Image */}
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-cyan/50 animate-cyber-pulse">
                   <img
                     src="/profile-photo.jpg"
-                    alt="Imtiyaz Nandasaniya"
+                    alt="Anubhav Chaudhary"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -57,11 +57,11 @@ export const AboutSection = () => {
                 {/* Basic Info */}
                 <div className="space-y-4 mb-8">
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">Imtiyaz Nandasaniya</h3>
-                    <p className="text-muted-foreground">Content Creator & Full-Stack Developer</p>
+                    <h3 className="text-2xl font-orbitron font-bold mb-2 animate-cyber-glow">Anubhav Chaudhary</h3>
+                    <p className="text-muted-foreground font-rajdhani">Content Creator & Full-Stack Developer</p>
                   </div>
 
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed font-rajdhani">
                     I'm a passionate content creator and full-stack developer who loves
                     sharing knowledge with the developer community. Through my Instagram
                     @code.clash, I create daily content about programming, web development,
@@ -71,38 +71,38 @@ export const AboutSection = () => {
 
                 {/* Action Buttons */}
                 <div className="space-y-3 mb-8">
-                  <Button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
+                  <Button className="w-full cyber-btn font-orbitron font-semibold">
                     <Instagram className="w-4 h-4 mr-2" />
                     Follow on Instagram
                   </Button>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full cyber-btn-outline font-orbitron font-semibold">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
                 </div>
 
                 {/* Quick Stats */}
-                <div className="grid grid-cols-3 gap-4 text-center border-t border-border pt-6">
-                  <div>
-                    <div className="flex items-center justify-center text-muted-foreground mb-1">
+                <div className="grid grid-cols-3 gap-4 text-center border-t border-neon-cyan/30 pt-6">
+                  <div className="animate-cyber-pulse">
+                    <div className="flex items-center justify-center text-neon-cyan mb-1">
                       <MapPin className="w-4 h-4 mr-1" />
                     </div>
-                    <div className="text-xs text-muted-foreground">Based in</div>
-                    <div className="text-sm font-medium">Ahmedabad, IN</div>
+                    <div className="text-xs text-muted-foreground font-rajdhani">Based in</div>
+                    <div className="text-sm font-orbitron font-medium">Bangalore, IN</div>
                   </div>
-                  <div>
-                    <div className="flex items-center justify-center text-green-500 mb-1">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                  <div className="animate-cyber-pulse" style={{ animationDelay: '0.1s' }}>
+                    <div className="flex items-center justify-center text-neon-green mb-1">
+                      <div className="w-2 h-2 bg-neon-green rounded-full mr-2 animate-cyber-pulse"></div>
                     </div>
-                    <div className="text-xs text-muted-foreground">Status</div>
-                    <div className="text-sm font-medium">Available</div>
+                    <div className="text-xs text-muted-foreground font-rajdhani">Status</div>
+                    <div className="text-sm font-orbitron font-medium text-neon-green">Available</div>
                   </div>
-                  <div>
-                    <div className="flex items-center justify-center text-muted-foreground mb-1">
+                  <div className="animate-cyber-pulse" style={{ animationDelay: '0.2s' }}>
+                    <div className="flex items-center justify-center text-neon-magenta mb-1">
                       <Award className="w-4 h-4 mr-1" />
                     </div>
-                    <div className="text-xs text-muted-foreground">Experience</div>
-                    <div className="text-sm font-medium">3+ Years</div>
+                    <div className="text-xs text-muted-foreground font-rajdhani">Experience</div>
+                    <div className="text-sm font-orbitron font-medium">5+ Years</div>
                   </div>
                 </div>
               </CardContent>
@@ -112,24 +112,26 @@ export const AboutSection = () => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Skills Section */}
-            <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.1s' }}>
+            <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Skills & Technologies</h3>
+                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Skills & Technologies</h3>
                 <div className="space-y-6">
                   {skills.map((skill, index) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                        <span className="font-rajdhani font-medium text-neon-cyan">{skill.name}</span>
+                        <span className="text-sm text-muted-foreground font-orbitron">{skill.level}%</span>
                       </div>
-                      <Progress
-                        value={skill.level}
-                        className="h-2"
-                        style={{
-                          animationDelay: `${index * 0.1}s`,
-                          animation: 'fade-in 0.8s ease-out forwards'
-                        }}
-                      />
+                      <div className="w-full bg-cyber-light rounded-full h-2 overflow-hidden">
+                        <div
+                          className="bg-gradient-to-r from-neon-cyan to-neon-magenta h-2 rounded-full animate-cyber-pulse"
+                          style={{
+                            width: `${skill.level}%`,
+                            animationDelay: `${index * 0.1}s`,
+                            transition: 'width 0.8s ease-out'
+                          }}
+                        ></div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -137,23 +139,23 @@ export const AboutSection = () => {
             </Card>
 
             {/* Journey Timeline */}
-            <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">My Journey</h3>
+                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">My Journey</h3>
                 <div className="space-y-6">
                   {timeline.map((item, index) => (
                     <div key={item.year} className="flex gap-4">
                       <div className="flex flex-col items-center">
-                        <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-sm">
+                        <div className="w-12 h-12 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full flex items-center justify-center text-cyber-dark font-orbitron font-bold text-sm animate-cyber-pulse">
                           {item.year}
                         </div>
                         {index < timeline.length - 1 && (
-                          <div className="w-px h-12 bg-border mt-2"></div>
+                          <div className="w-px h-12 bg-neon-cyan/50 mt-2 animate-cyber-pulse"></div>
                         )}
                       </div>
                       <div className="flex-1 pb-8">
-                        <h4 className="font-bold text-lg mb-2">{item.title}</h4>
-                        <p className="text-muted-foreground">{item.description}</p>
+                        <h4 className="font-orbitron font-bold text-lg mb-2 text-neon-cyan">{item.title}</h4>
+                        <p className="text-muted-foreground font-rajdhani">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -162,15 +164,15 @@ export const AboutSection = () => {
             </Card>
 
             {/* Fun Facts */}
-            <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.3s' }}>
+            <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Fun Facts</h3>
+                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Fun Facts</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   {funFacts.map((fact, index) => (
-                    <div key={fact.label} className="text-center">
-                      <div className="text-4xl mb-3">{fact.icon}</div>
-                      <div className="text-sm text-muted-foreground mb-1">{fact.label}</div>
-                      <div className="font-bold gradient-text text-xl">{fact.value}</div>
+                    <div key={fact.label} className="text-center animate-cyber-pulse" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
+                      <div className="text-4xl mb-3 animate-cyber-float">{fact.icon}</div>
+                      <div className="text-sm text-muted-foreground mb-1 font-rajdhani">{fact.label}</div>
+                      <div className="font-orbitron font-bold gradient-text text-xl animate-cyber-glow">{fact.value}</div>
                     </div>
                   ))}
                 </div>

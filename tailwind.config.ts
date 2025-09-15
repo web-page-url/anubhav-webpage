@@ -17,6 +17,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'orbitron': ['Orbitron', 'monospace'],
+        'rajdhani': ['Rajdhani', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +55,18 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Cyber theme specific colors
+        neon: {
+          cyan: "var(--neon-cyan)",
+          magenta: "var(--neon-magenta)",
+          purple: "var(--neon-purple)",
+          blue: "var(--neon-blue)",
+        },
+        cyber: {
+          dark: "var(--cyber-dark)",
+          darker: "var(--cyber-darker)",
+          light: "var(--cyber-light)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +100,27 @@ const config = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        // Cyber-specific animations
+        "cyber-glow": {
+          "0%, 100%": {
+            textShadow: "0 0 5px rgba(0, 255, 255, 0.5)",
+          },
+          "50%": {
+            textShadow: "0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.4)",
+          },
+        },
+        "cyber-pulse": {
+          "0%, 100%": {
+            boxShadow: "0 0 5px rgba(0, 255, 255, 0.5)",
+          },
+          "50%": {
+            boxShadow: "0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.4)",
+          },
+        },
+        "neon-flicker": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -91,6 +128,10 @@ const config = {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
         "float": "float 3s ease-in-out infinite",
+        // Cyber animations
+        "cyber-glow": "cyber-glow 2s ease-in-out infinite",
+        "cyber-pulse": "cyber-pulse 2s ease-in-out infinite",
+        "neon-flicker": "neon-flicker 0.15s ease-in-out infinite",
       },
     },
   },

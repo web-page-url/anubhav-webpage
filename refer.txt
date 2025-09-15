@@ -1,59 +1,154 @@
-✅ All Original Components Replicated:
-Header - Exact replica with navigation and theme toggle
-HeroSection - Complete with animated code editor and all stats
-ServicesSection - Detailed service cards with icons and counts
-AboutSection - Full profile section with:
-Profile photo display
-Skills with progress bars
-Timeline of journey
-Fun facts grid
-Contact buttons
-BlogsSection - Featured blogs with gradients and tags
-TechStackSection - Complete technology grid with 15+ technologies
-ContactSection - Full contact form with social links and services
-Footer - Social media links with back-to-top functionality
-🚀 Key Features Preserved
-✅ All Original Functionality:
-✅ Animated typing effect in CodeEditor
-✅ Glass card effects and hover animations
-✅ Dark/light theme toggle (working)
-✅ Responsive design across all devices
-✅ Smooth scroll animations
-✅ Interactive buttons and components
-✅ Social media integration
-✅ Profile photo display
-✅ Skills progress bars
-✅ Technology icons with gradients
-✅ Back-to-top functionality
-🛠️ Technical Implementation
-✅ Next.js Best Practices Applied:
-✅ Server/Client component separation
-✅ "use client" directives where needed
-✅ Proper event handlers in client components
-✅ Static asset handling
-✅ TypeScript compatibility
-✅ Build optimization
-✅ Build Success:
-✅ Build Status: ✅ Successful
-✅ Bundle Size: 117 kB (optimized)
-✅ Static Generation: All pages pre-rendered
-✅ Linting: No errors
-✅ TypeScript: All types valid
-📁 Files Updated
-🎨 Visual Features Maintained
-✅ All Original Styling Preserved:
-✅ Glass morphism effects
-✅ Gradient text and backgrounds
-✅ Hover animations (hover-lift, hover-glow)
-✅ Custom animations (fade-up, float)
-✅ Responsive grid layouts
-✅ Typography hierarchy
-✅ Color schemes and themes
-🚀 Ready for Production
-Your Next.js application now contains exact replicas of all components from the original React/Vite version, with:
-✅ Zero functionality lost
-✅ Enhanced performance with Next.js
-✅ SEO optimization
-✅ Static generation
-✅ Production-ready build
-The application maintains the exact same user experience while benefiting from Next.js's powerful features and optimizations. You can now run npm run dev to start development or npm run build for production deployment.
+Anubhav-Resume-IIT-Mandi-
+
+ANUBHAV CHAUDHARY
+
+📧 anubhavchaudhary459@gmail.com
+ | 📱 +91 9736211316
+🔗 LinkedIn
+ | GitHub
+ | Portfolio
+
+SUMMARY
+
+Innovative Full Stack Software Developer with 5+ years of experience in designing and developing scalable, high-performance applications across fintech, healthcare, travel, and consulting domains. A B.Tech (CSE) graduate from IIT Mandi, with expertise in Next.js, React.js, Node.js, JavaScript, Python, MongoDB, SQL, and AI/ML. Skilled in team leadership, problem solving, and building user-centric applications, with proven success at PayPal, Apollo 24/7, ICICI Bank, Tripzygo International, Noormer Tech, and NSL Hub.
+
+WORK EXPERIENCE
+Software Developer – Aditi Consulting (Client: PayPal)
+
+Nov 2024 – Present | Bangalore
+
+Modernized PayPal’s Asset Management Tool using Next.js, Node.js.
+
+Migrated legacy PHP systems into modular React.js and Node.js architecture.
+
+Optimized performance with SSR in Next.js and RESTful API integration.
+
+Tech: Next.js, Node.js, React.js, REST APIs, Git, Linux.
+
+Senior Software Developer – Apollo 24/7
+
+Feb 2023 – Nov 2024 | Gurugram
+
+Built full-stack healthcare apps using Next.js, Express.js, GraphQL.
+
+Designed database schemas with SQL & MongoDB.
+
+Implemented Google services integration (Auth, Sync).
+
+Focused on SEO optimization & SSR for high traffic apps.
+
+Tech: Next.js, GraphQL, MongoDB, Express.js, AWS.
+
+Full Stack Developer – Noormer Tech
+
+Feb 2023 | Gurugram
+
+Built holidaysocho.com
+ from scratch.
+
+Integrated ChatGPT, Google Maps API, Weather & Image APIs.
+
+Led a team of 6 developers, delivering frontend & backend successfully.
+
+Tech: Next.js, MongoDB, Node.js, REST APIs, AWS.
+
+Full Stack Developer – Tripzygo International
+
+Jun 2022 | Gurugram
+
+Developed tripzygo.in
+ – scalable travel platform.
+
+Built secure user data flows & MongoDB backend.
+
+Implemented advanced filtering & SEO.
+
+Tech: Next.js, Node.js, MongoDB, REST APIs.
+
+Data Science Manager (M1) – ICICI Bank
+
+Oct 2021 | Hyderabad
+
+Developed ML solutions for EMI prediction & debit card renewal.
+
+Handled large-scale datasets with millions of records.
+
+Collaborated with leadership on AI-driven solutions.
+
+Tech: Python, MySQL, Scikit-learn, TensorFlow, Pandas, NumPy.
+
+Software Developer – NSL Hub
+
+Feb 2021 | Hyderabad
+
+Built full-stack solutions using PHP, Python, JavaScript, React.
+
+Worked on compiler-based systems & innovative tools.
+
+EDUCATION
+
+B.Tech in Computer Science – IIT Mandi (2016–2020) – 68%
+
+Class 12 – NIOS (2015) – 78%
+
+Class 10 – JNV Maharajganj (2013) – 93%
+
+PROJECTS (with URLs)
+
+AI with Voice Assistance – https://ai-anubhav.netlify.app/ai
+
+Amazing Daily Planner – https://amazing-daily-planner.netlify.app/
+
+Bawal Code (Hindi Programming Language) – https://bawal-code.vercel.app/
+
+Code Spark AI (Code Generator Chatbot) – https://code-spark-ai.vercel.app/
+
+Sticker Magic (Custom Stickers App) – https://sticker-magic.vercel.app/
+
+Better Prompt Tool (AI Prompt Optimizer) – https://better-prompt-alpha.vercel.app/
+
+3D Shooting Game (Three.js) – https://anubhav-3d-shooting-game.netlify.app/
+
+AI Doctor 24/7 – https://doctor247.netlify.app/
+
+Text-to-Speech Converter – https://anubhav-text-to-speech.netlify.app/
+
+QR Code Generator – https://123anubhav.github.io/qr_link/
+
+GitHub User Search App – https://anubhav-github-users-search.netlify.app/
+
+AI Travel Assistant Chatbot – https://anubhav-holiday-socho-ai.netlify.app/
+
+AI Powered Python Learning App – https://next-gen-python-learn.vercel.app/
+
+Portfolio Website – https://anubhav-webpage.netlify.app/
+
+
+
+TECHNICAL SKILLS
+
+Frontend: Next.js, React.js, JavaScript (ES6+), TypeScript, HTML, CSS, Tailwind CSS, Angular, Bootstrap
+
+Backend: Node.js, Express.js, REST APIs, GraphQL, PHP
+
+Databases: MongoDB, MySQL, SQL
+
+AI/ML & Data Science: Python, TensorFlow, Scikit-learn, Pandas, NumPy, NLP, Predictive Modeling
+
+Cloud/DevOps: AWS, Git, Linux
+
+Other: Compiler Design, Android Game Development
+
+ACHIEVEMENTS
+
+Inter IIT Tech Meet (IIT Bombay 2018, IIT Roorkee 2019).
+
+Competitive Programming: C++ 4★, Python 4★.
+
+Multiple awards from GeeksforGeeks & LeetCode.
+
+Built & published 3 Android Games on Google Play Store.
+
+STRENGTHS
+
+Quick Learner | Problem Solver | Leadership | Exploring AI | Building Scalable Systems | SEO & Performance Optimization

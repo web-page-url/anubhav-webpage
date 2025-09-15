@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'CODE.CLASH - Content Creator & Developer',
   description: 'Content creator sharing daily programming tips, tutorials, and development content on Instagram. Full-stack developer available for freelance projects.',
   keywords: ['programming', 'tutorials', 'web development', 'content creator', 'instagram', 'coding'],
-  authors: [{ name: 'Imtiyaz Nandasaniya' }],
+  authors: [{ name: 'Anubhav Chaudhary' }],
   openGraph: {
     title: 'CODE.CLASH - Content Creator & Developer',
     description: 'Content creator sharing daily programming tips, tutorials, and development content on Instagram.',
