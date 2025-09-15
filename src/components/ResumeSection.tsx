@@ -209,47 +209,113 @@ export const ResumeSection = () => {
             </Card>
           </div>
 
-          {/* Work Experience */}
-          <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.1s' }}>
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-orbitron font-bold mb-8 flex items-center animate-cyber-glow">
-                <Briefcase className="w-6 h-6 mr-3 text-neon-cyan animate-cyber-pulse" />
-                Work Experience
+          {/* Work Experience Timeline */}
+          <div className="animate-cyber-fade-up" style={{ animationDelay: '0.1s' }}>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-orbitron font-bold mb-4 animate-cyber-glow">
+                <Briefcase className="w-8 h-8 mr-3 text-neon-cyan animate-cyber-pulse inline-block" />
+                Career Journey
               </h3>
-              <div className="space-y-8">
-                {workExperience.map((job, index) => (
-                  <div key={index} className={`glass-card hover-lift bg-gradient-to-r ${job.color} animate-fade-up`} style={{ animationDelay: `${0.2 + index * 0.1}s` }}>
-                    <CardContent className="p-6">
-                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
-                        <div>
-                          <h4 className="text-xl font-bold mb-2">{job.title}</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mb-3">
-                            <Calendar className="w-4 h-4 mr-2" />
-                            {job.period} • {job.location}
-                          </div>
-                        </div>
+              <p className="text-muted-foreground font-rajdhani max-w-2xl mx-auto">
+                A timeline of my professional growth and key achievements across various domains
+              </p>
+            </div>
+
+            {/* Timeline Container */}
+            <div className="relative max-w-6xl mx-auto timeline-container">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-neon-cyan via-neon-magenta to-neon-purple h-full rounded-full animate-cyber-pulse timeline-line"></div>
+
+              {/* Timeline Items */}
+              <div className="space-y-12 md:space-y-16">
+                {workExperience.map((job, index) => {
+                  const isEven = index % 2 === 0;
+                  return (
+                    <div key={index} className={`relative flex items-center ${isEven ? 'justify-start' : 'justify-end'} timeline-item animate-cyber-fade-up`} style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
+                      {/* Timeline Dot */}
+                      <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full border-4 border-cyber-dark animate-cyber-pulse z-10 timeline-dot">
+                        <div className="w-full h-full bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full animate-cyber-pulse"></div>
                       </div>
-                      <ul className="space-y-2 mb-4">
-                        {job.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start text-sm">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                            <span className="text-muted-foreground">{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="flex flex-wrap gap-2">
-                        {job.tech.map((tech, i) => (
-                          <Badge key={i} variant="secondary" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
+
+                      {/* Content Card */}
+                      <div className={`w-full max-w-md timeline-card ${isEven ? 'mr-8 lg:mr-16' : 'ml-8 lg:ml-16'} relative`}>
+                        <Card className={`cyber-card hover-lift bg-gradient-to-r ${job.color} group cursor-pointer transform transition-all duration-300 hover:scale-105`}>
+                          <CardContent className="p-6">
+                            {/* Company/Period Badge */}
+                            <div className="flex items-center justify-between mb-4">
+                              <Badge className="bg-neon-cyan/20 text-neon-cyan border-neon-cyan/50 font-orbitron text-xs animate-cyber-pulse">
+                                {job.period}
+                              </Badge>
+                              <div className="flex items-center text-sm text-muted-foreground font-rajdhani">
+                                <MapPin className="w-4 h-4 mr-1 text-neon-magenta" />
+                                {job.location}
+                              </div>
+                            </div>
+
+                            {/* Job Title */}
+                            <h4 className="text-xl font-orbitron font-bold mb-3 text-foreground group-hover:text-neon-cyan transition-colors duration-300">
+                              {job.title}
+                            </h4>
+
+                            {/* Achievements */}
+                            <div className="space-y-2 mb-4">
+                              {job.achievements.slice(0, 2).map((achievement, i) => (
+                                <div key={i} className="flex items-start text-sm">
+                                  <div className="w-1.5 h-1.5 bg-neon-cyan rounded-full mr-3 mt-2 flex-shrink-0 animate-cyber-pulse"></div>
+                                  <span className="text-muted-foreground font-rajdhani leading-relaxed">{achievement}</span>
+                                </div>
+                              ))}
+                              {job.achievements.length > 2 && (
+                                <div className="text-sm text-neon-cyan font-rajdhani opacity-75">
+                                  +{job.achievements.length - 2} more achievements
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Tech Stack */}
+                            <div className="flex flex-wrap gap-2">
+                              {job.tech.map((tech, i) => (
+                                <Badge key={i} className="bg-cyber-dark/60 text-neon-cyan border-neon-cyan/50 text-xs font-orbitron animate-cyber-pulse hover:bg-neon-cyan/20 transition-colors duration-300">
+                                  {tech}
+                                </Badge>
+                              ))}
+                            </div>
+
+                            {/* Hover Arrow */}
+                            <div className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 border-8 border-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
+                              isEven
+                                ? 'right-0 border-l-cyber-dark translate-x-2'
+                                : 'left-0 border-r-cyber-dark -translate-x-2'
+                            }`}></div>
+                          </CardContent>
+                        </Card>
+
+                        {/* Mobile Timeline Connector */}
+                        <div className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gradient-to-r from-neon-cyan to-transparent timeline-line ${
+                          isEven ? 'right-0 translate-x-full' : 'left-0 -translate-x-full'
+                        }`}></div>
                       </div>
-                    </CardContent>
-                  </div>
-                ))}
+                    </div>
+                  );
+                })}
               </div>
-            </CardContent>
-          </Card>
+
+              {/* Timeline End Point */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-4 h-4 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-full animate-cyber-pulse"></div>
+            </div>
+
+            {/* Mobile Timeline Legend */}
+            <div className="md:hidden mt-12 flex justify-center">
+              <Card className="cyber-card">
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground font-rajdhani">
+                    <div className="w-3 h-3 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full animate-cyber-pulse"></div>
+                    <span>Click cards for details</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
 
           {/* Education */}
           <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.2s' }}>
