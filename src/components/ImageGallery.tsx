@@ -414,7 +414,7 @@ export const ImageGallery = () => {
                 className="cyber-card hover-lift animate-cyber-fade-up min-h-[280px] sm:min-h-[320px]"
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                <CardContent className="p-5 sm:p-7">
+                <CardContent className="p-5 sm:p-7 text-left">
                   <div className="flex flex-col gap-5">
                      {/* Mobile Image - Much Bigger */}
                      <div className="flex justify-center">

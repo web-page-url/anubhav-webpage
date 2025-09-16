@@ -157,11 +157,11 @@ export const ResumeSection = () => {
 
         <div className="space-y-12">
           {/* Contact Info & Summary */}
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Contact Card */}
-            <Card className="cyber-card hover-lift animate-cyber-fade-up lg:col-span-1">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Contact Info</h3>
+            <Card className="cyber-card hover-lift animate-cyber-fade-up lg:col-span-1 order-2 lg:order-1">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow">Contact Info</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-primary" />
@@ -194,9 +194,9 @@ export const ResumeSection = () => {
             </Card>
 
             {/* Summary Card */}
-            <Card className="cyber-card hover-lift animate-cyber-fade-up lg:col-span-2">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Professional Summary</h3>
+            <Card className="cyber-card hover-lift animate-cyber-fade-up lg:col-span-2 order-1 lg:order-2">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow">Professional Summary</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Innovative Full Stack Software Developer with 5+ years of experience in designing and developing
                   scalable, high-performance applications across fintech, healthcare, travel, and consulting domains.

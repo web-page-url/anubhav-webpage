@@ -43,9 +43,9 @@ export const AboutSection = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Profile Card */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 order-2 lg:order-1">
             <Card className="cyber-card hover-lift animate-cyber-fade-up">
-              <CardContent className="p-8 text-center">
+              <CardContent className="p-6 sm:p-8 text-center">
                 {/* Profile Image */}
                 <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-3 sm:border-4 border-neon-cyan/50 animate-cyber-pulse">
                   <picture>
@@ -121,11 +121,11 @@ export const AboutSection = () => {
           </div>
 
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6 sm:space-y-8 order-1 lg:order-2">
             {/* Skills Section */}
             <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.1s' }}>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Skills & Technologies</h3>
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow">Skills & Technologies</h3>
                 <div className="space-y-6">
                   {skills.map((skill, index) => (
                     <div key={skill.name} className="space-y-2">
@@ -151,8 +151,8 @@ export const AboutSection = () => {
 
             {/* Journey Timeline */}
             <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">My Journey</h3>
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow">My Journey</h3>
                 <div className="space-y-6">
                   {timeline.map((item, index) => (
                     <div key={item.year} className="flex gap-4">
@@ -176,9 +176,9 @@ export const AboutSection = () => {
 
             {/* Fun Facts */}
             <Card className="cyber-card animate-cyber-fade-up" style={{ animationDelay: '0.3s' }}>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-orbitron font-bold mb-6 animate-cyber-glow">Fun Facts</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <CardContent className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow">Fun Facts</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
                   {funFacts.map((fact, index) => (
                     <div key={fact.label} className="text-center animate-cyber-pulse" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
                       <div className="text-4xl mb-3 animate-cyber-float">{fact.icon}</div>

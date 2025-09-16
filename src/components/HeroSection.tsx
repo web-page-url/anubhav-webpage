@@ -9,14 +9,14 @@ export const HeroSection = () => {
       <div className="container mx-auto max-w-7xl w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-160px)]">
           {/* Left Content */}
-          <div className="space-y-8 animate-cyber-fade-up">
+          <div className="space-y-6 sm:space-y-8 animate-cyber-fade-up text-left">
             {/* Status Badge */}
             <Badge className="px-4 py-2 text-sm bg-neon-magenta/20 text-neon-magenta border-neon-magenta/50 animate-cyber-pulse font-rajdhani">
               ⚡ Creating content daily
             </Badge>
 
             {/* Main Heading */}
-            <div className="space-y-2 sm:space-y-4">
+            <div className="space-y-2 sm:space-y-4 text-left">
               <h1 className="font-orbitron font-bold leading-tight animate-cyber-glow text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                 I <span className="gradient-text animate-neon-flicker">Create</span>
               </h1>
@@ -26,7 +26,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Description */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4 text-left">
               <p className="text-base sm:text-lg text-muted-foreground max-w-lg leading-relaxed font-rajdhani">
                 I'm Anubhav Chaudhary — a Senior Software Engineer passionate about building scalable solutions and sharing knowledge.
                 I create daily programming tips, tutorials, and behind-the-scenes development content on Instagram to help fellow developers grow.
@@ -56,7 +56,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Role Badges */}
-            <div className="flex flex-wrap gap-2 sm:gap-3 justify-center sm:justify-start">
+            <div className="flex flex-wrap gap-2 sm:gap-3 justify-start">
               <Badge className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm bg-neon-purple/20 text-neon-purple border-neon-purple/50 hover:bg-neon-purple/30 transition-all duration-300 animate-cyber-pulse font-rajdhani">
                 👨‍💻 Senior Software Engineer
               </Badge>
@@ -69,7 +69,7 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto justify-start">
               <Button size="lg" className="cyber-btn font-orbitron font-semibold text-sm sm:text-base w-full sm:w-auto">
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Follow @anubhav.codes
@@ -81,7 +81,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 border-t border-neon-cyan/30">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 border-t border-neon-cyan/30 justify-items-center">
               <div className="text-center animate-cyber-pulse">
                 <div className="text-2xl sm:text-3xl font-orbitron font-bold gradient-text animate-cyber-glow">132K+</div>
                 <div className="text-xs sm:text-sm text-muted-foreground font-rajdhani">Instagram Followers</div>
@@ -99,7 +99,7 @@ export const HeroSection = () => {
 
           {/* Right Content - Code Editor */}
           <div className="lg:pl-4 xl:pl-8 mt-8 lg:mt-0 animate-cyber-fade-up order-first lg:order-last" style={{ animationDelay: '0.2s' }}>
-            <div className="scale-90 sm:scale-100">
+            <div className="scale-90 sm:scale-100 flex justify-center lg:justify-start">
             <CodeEditor />
             </div>
           </div>
