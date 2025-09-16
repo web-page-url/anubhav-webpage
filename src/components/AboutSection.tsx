@@ -5,18 +5,19 @@ import { Instagram, MessageCircle, MapPin, Clock, Award } from "lucide-react";
 
 export const AboutSection = () => {
   const skills = [
-    { name: "JavaScript/TypeScript", level: 95 },
-    { name: "React/Next.js", level: 90 },
-    { name: "Node.js/Express", level: 85 },
-    { name: "Content Creation", level: 98 },
-    { name: "UI/UX Design", level: 80 },
+    { name: "JavaScript/TypeScript", level: 98 },
+    { name: "React/Next.js", level: 95 },
+    { name: "Node.js/Express", level: 92 },
+    { name: "System Architecture", level: 90 },
+    { name: "Cloud & DevOps", level: 88 },
+    { name: "Content Creation", level: 95 },
   ];
 
   const timeline = [
     { year: "2021", title: "Started Coding", description: "Began my programming journey" },
-    { year: "2022", title: "First Project", description: "Built my first web application" },
-    { year: "2023", title: "Content Creation", description: "Started @anubhav.codes on Instagram" },
-    { year: "2024", title: "134.565k+ Followers", description: "Growing developer community" },
+    { year: "2022", title: "First Professional Role", description: "Joined first software development position" },
+    { year: "2023", title: "Senior Engineer", description: "Promoted to Senior Software Engineer role" },
+    { year: "2024", title: "Content Creation", description: "Started @anubhav.codes on Instagram" },
   ];
 
   const funFacts = [
@@ -35,8 +36,8 @@ export const AboutSection = () => {
             About <span className="gradient-text animate-neon-flicker">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani">
-            Discover the story, passion, and dedication behind my journey as a
-            content creator and full-stack developer.
+            Discover my journey as a Senior Software Engineer passionate about
+            building scalable solutions and empowering developers through content creation.
           </p>
         </div>
 
@@ -58,14 +59,13 @@ export const AboutSection = () => {
                 <div className="space-y-4 mb-8">
                   <div>
                     <h3 className="text-2xl font-orbitron font-bold mb-2 animate-cyber-glow">Anubhav Chaudhary</h3>
-                    <p className="text-muted-foreground font-rajdhani">Content Creator & Full-Stack Developer</p>
+                    <p className="text-muted-foreground font-rajdhani">Senior Software Engineer & Content Creator</p>
                   </div>
 
                   <p className="text-sm text-muted-foreground leading-relaxed font-rajdhani">
-                    I'm a passionate content creator and full-stack developer who loves
-                    sharing knowledge with the developer community. Through my Instagram
-                    @anubhav.codes, I create daily content about programming, web development,
-                    and tech insights.
+                    I'm Anubhav Chaudhary — a Senior Software Engineer passionate about building scalable solutions and sharing knowledge.
+                    Through my Instagram @anubhav.codes, I create daily programming tips, tutorials, and behind-the-scenes development
+                    content to help fellow developers grow.
                   </p>
                 </div>
 

@@ -5,15 +5,20 @@ import { useState, useEffect } from "react";
 export const CodeEditor = () => {
   const [typedText, setTypedText] = useState("");
 
-  const codeContent = `const contentCreator = {
+const codeContent = `const contentCreator = {
   name: "Anubhav Chaudhary",
   handle: "@anubhav.codes",
   platform: "Instagram",
-  content: ["Tutorials", "Tips", "Projects"],
+  role: "Senior Software Engineer & Tech Educator",
+  content: ["Tutorials", "Tips", "Projects", "Behind-the-scenes Dev Life"],
+  audience: "Aspiring developers, tech enthusiasts, and early-career engineers",
 
   createDaily: () => {
-    return "Making coding accessible to everyone";
-  }
+    return "Making coding accessible to everyone through engaging, bite-sized content.";
+  },
+
+  availableFor: ["Freelance Projects", "Mentorship", "Collabs"],
+  website: "https://anubhav.codes" // Portfolio URL
 };`;
 
   useEffect(() => {
@@ -60,6 +65,8 @@ export const CodeEditor = () => {
             <span className="text-neon-purple">"@anubhav.codes"</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">platform</span>:{" "}
             <span className="text-neon-purple">"Instagram"</span>,{"\n"}
+            {"  "}<span className="text-neon-cyan">role</span>:{" "}
+            <span className="text-neon-purple">"Senior Software Engineer & Tech Educator"</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">content</span>:{" "}
             <span className="text-foreground">["</span>
             <span className="text-neon-purple">Tutorials</span>
@@ -67,13 +74,28 @@ export const CodeEditor = () => {
             <span className="text-neon-purple">Tips</span>
             <span className="text-foreground">, </span>
             <span className="text-neon-purple">Projects</span>
+            <span className="text-foreground">, </span>
+            <span className="text-neon-purple">Behind-the-scenes Dev Life</span>
             <span className="text-foreground">"]</span>,{"\n"}
+            {"  "}<span className="text-neon-cyan">audience</span>:{" "}
+            <span className="text-neon-purple">"Aspiring developers, tech enthusiasts, and early-career engineers"</span>,{"\n"}
             {"\n"}
             {"  "}<span className="text-neon-magenta">createDaily</span>:{" "}
             <span className="text-foreground">() =&gt; {"{"}</span>{"\n"}
             {"    "}<span className="text-neon-blue">return</span>{" "}
-            <span className="text-neon-purple">"Making coding accessible to everyone"</span>;{"\n"}
-            {"  "}<span className="text-foreground">{"}"}</span>{"\n"}
+            <span className="text-neon-purple">"Making coding accessible to everyone through engaging, bite-sized content."</span>;{"\n"}
+            {"  "}<span className="text-foreground">{"}"}</span>,{"\n"}
+            {"\n"}
+            {"  "}<span className="text-neon-cyan">availableFor</span>:{" "}
+            <span className="text-foreground">["</span>
+            <span className="text-neon-purple">Freelance Projects</span>
+            <span className="text-foreground">, </span>
+            <span className="text-neon-purple">Mentorship</span>
+            <span className="text-foreground">, </span>
+            <span className="text-neon-purple">Collabs</span>
+            <span className="text-foreground">"]</span>,{"\n"}
+            {"  "}<span className="text-neon-cyan">website</span>:{" "}
+            <span className="text-neon-purple">"https://anubhav.codes"</span>{"\n"}
             <span className="text-foreground">{"}"}</span>;
           </pre>
           <div className="mt-4 flex items-center">

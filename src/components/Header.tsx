@@ -21,10 +21,10 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#blogs"
+              href="#about"
               className="text-muted-foreground hover:text-neon-cyan transition-all duration-300 hover:animate-cyber-glow font-rajdhani font-medium"
             >
-              Blogs
+              About
             </a>
             <a
               href="#resume"
@@ -39,10 +39,10 @@ export const Header = () => {
               Projects
             </a>
             <a
-              href="#links"
+              href="#tech-stack"
               className="text-muted-foreground hover:text-neon-cyan transition-all duration-300 hover:animate-cyber-glow font-rajdhani font-medium"
             >
-              Links
+              Tech-Stack
             </a>
           </nav>
 

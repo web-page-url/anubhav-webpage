@@ -21,26 +21,50 @@ export const HeroSection = () => {
                 I <span className="gradient-text animate-neon-flicker">Create</span>
               </h1>
               <h2 className="font-orbitron font-bold text-muted-foreground animate-cyber-glow" style={{ animationDelay: '0.2s' }}>
-                For Developers
+                For Developers & Tech Enthusiasts
               </h2>
             </div>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed font-rajdhani">
-              Content creator sharing daily programming tips, tutorials, and behind-the-scenes
-              development content on Instagram. Also available for freelance projects and mentoring.
-            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-muted-foreground max-w-lg leading-relaxed font-rajdhani">
+                I'm Anubhav Chaudhary — a Senior Software Engineer passionate about building scalable solutions and sharing knowledge.
+                I create daily programming tips, tutorials, and behind-the-scenes development content on Instagram to help fellow developers grow.
+              </p>
+
+              {/* Availability Section */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-orbitron font-bold text-neon-cyan animate-cyber-glow">💼 Available for:</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-neon-magenta rounded-full animate-cyber-pulse"></div>
+                    <span className="text-sm text-muted-foreground font-rajdhani">Freelance projects</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-neon-cyan rounded-full animate-cyber-pulse" style={{ animationDelay: '0.1s' }}></div>
+                    <span className="text-sm text-muted-foreground font-rajdhani">Mentorship & career guidance</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-neon-purple rounded-full animate-cyber-pulse" style={{ animationDelay: '0.2s' }}></div>
+                    <span className="text-sm text-muted-foreground font-rajdhani">Technical content collaborations</span>
+                  </div>
+                </div>
+                <p className="text-sm text-neon-cyan font-rajdhani italic animate-cyber-glow" style={{ animationDelay: '0.3s' }}>
+                  Let's build something impactful together.
+                </p>
+              </div>
+            </div>
 
             {/* Role Badges */}
             <div className="flex flex-wrap gap-3">
               <Badge className="px-4 py-2 bg-neon-purple/20 text-neon-purple border-neon-purple/50 hover:bg-neon-purple/30 transition-all duration-300 animate-cyber-pulse font-rajdhani">
-                🎨 Content Creator
+                👨‍💻 Senior Software Engineer
               </Badge>
               <Badge className="px-4 py-2 bg-neon-cyan/20 text-neon-cyan border-neon-cyan/50 hover:bg-neon-cyan/30 transition-all duration-300 animate-cyber-pulse font-rajdhani">
-                💻 Full-Stack Developer
+                🎨 Content Creator
               </Badge>
               <Badge className="px-4 py-2 bg-neon-blue/20 text-neon-blue border-neon-blue/50 hover:bg-neon-blue/30 transition-all duration-300 animate-cyber-pulse font-rajdhani">
-                🏘️ Community Builder
+                🧠 Tech Mentor
               </Badge>
             </div>
 

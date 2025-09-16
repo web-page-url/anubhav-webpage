@@ -15,8 +15,8 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
-        <BlogsSection />
+        {/* <ServicesSection /> */}
+        {/* <BlogsSection /> */}
         <AboutSection />
         <ResumeSection />
         <ImageGallery />

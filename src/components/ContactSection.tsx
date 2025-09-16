@@ -9,14 +9,14 @@ export const ContactSection = () => {
       platform: "Instagram",
       handle: "@anubhav.codes",
       color: "from-pink-500 to-purple-500",
-      href: "https://instagram.com/code.clash"
+      href: "https://instagram.com/anubhav___13"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       platform: "LinkedIn",
-      handle: "imtiyaz-nandasaniya",
+      handle: "Anubhav-Chaudhary",
       color: "from-blue-600 to-blue-400",
-      href: "https://linkedin.com/in/imtiyaz-nandasaniya"
+      href: "https://www.linkedin.com/in/anubhav-chaudhary-4bba7918b/"
     },
     {
       icon: <Twitter className="w-6 h-6" />,
@@ -28,9 +28,9 @@ export const ContactSection = () => {
     {
       icon: <Github className="w-6 h-6" />,
       platform: "GitHub",
-      handle: "imtiyazCode",
+      handle: "13anubhav",
       color: "from-gray-600 to-gray-800",
-      href: "https://github.com/imtiyazCode"
+      href: "https://github.com/13anubhav"
     }
   ];
 
@@ -90,7 +90,7 @@ export const ContactSection = () => {
                     </div>
                     <div>
                       <div className="font-medium">Email</div>
-                      <div className="text-muted-foreground">codeclashofficial@gmail.com</div>
+                      <div className="text-muted-foreground">anubhavcodes13@gmail.com</div>
                     </div>
                   </div>
                 </div>

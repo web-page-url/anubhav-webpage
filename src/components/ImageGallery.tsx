@@ -529,7 +529,7 @@ export const ImageGallery = () => {
         </div>
 
         {/* Additional Projects Section */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <div className="text-center mb-12 animate-cyber-fade-up">
             <h3 className="font-orbitron font-bold text-3xl mb-4 text-neon-cyan animate-cyber-glow">
               All Projects
@@ -548,7 +548,7 @@ export const ImageGallery = () => {
               >
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    {/* Project Icon */}
+                    
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta flex items-center justify-center animate-cyber-pulse">
                       {project.category === "Data Science" && <span className="text-cyber-dark text-lg">📊</span>}
                       {project.category === "Blockchain" && <span className="text-cyber-dark text-lg">⛓️</span>}
@@ -560,7 +560,7 @@ export const ImageGallery = () => {
                       {project.category === "Security" && <span className="text-cyber-dark text-lg">🔒</span>}
                     </div>
 
-                    {/* Project Details */}
+                 
                     <div className="flex-1 min-w-0">
                       <h4 className="font-orbitron font-bold text-lg mb-2 text-neon-cyan group-hover:text-neon-magenta transition-colors duration-300">
                         {project.name}
@@ -569,7 +569,7 @@ export const ImageGallery = () => {
                         {project.description}
                       </p>
 
-                      {/* Tech Stack */}
+                    
                       <div className="flex flex-wrap gap-1 mb-4">
                         {project.tech.map((tech, i) => (
                           <Badge
@@ -582,7 +582,7 @@ export const ImageGallery = () => {
                         ))}
                       </div>
 
-                      {/* Category & Link */}
+                   
                       <div className="flex items-center justify-between">
                         <Badge className="text-xs bg-neon-purple/20 text-neon-purple border-neon-purple/50">
                           {project.category}
@@ -600,7 +600,7 @@ export const ImageGallery = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Call to Action */}
         <div className="text-center mt-20 animate-cyber-fade-up" style={{ animationDelay: '1.2s' }}>

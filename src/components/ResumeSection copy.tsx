@@ -276,7 +276,7 @@ export const ResumeSection = () => {
           </Card>
 
           {/* Skills */}
-          <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          {/* <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.3s' }}>
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-8 flex items-center">
                 <Code className="w-6 h-6 mr-3 text-primary" />
@@ -297,10 +297,10 @@ export const ResumeSection = () => {
                 ))}
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Projects */}
-          <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          {/* <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-8 flex items-center">
                 <Globe className="w-6 h-6 mr-3 text-primary" />
@@ -329,7 +329,7 @@ export const ResumeSection = () => {
                 ))}
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Achievements & Strengths */}
           <div className="grid lg:grid-cols-2 gap-8">
