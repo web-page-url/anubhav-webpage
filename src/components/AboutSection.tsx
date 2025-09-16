@@ -48,11 +48,22 @@ export const AboutSection = () => {
               <CardContent className="p-8 text-center">
                 {/* Profile Image */}
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-cyan/50 animate-cyber-pulse">
-                  <img
-                    src="/profile-photo.jpg"
-                    alt="Anubhav Chaudhary"
-                    className="w-full h-full object-cover"
-                  />
+                  <picture>
+                    {/* AVIF format for modern browsers */}
+                    <source srcSet="/Anubhav-img-avif.avif" type="image/avif" />
+                    {/* WebP format for supported browsers */}
+                    <source srcSet="/Anubhav-img-webp.webp" type="image/webp" />
+                    {/* Optimized JPEG as fallback */}
+                    <img
+                      src="/Anubhav-img-optimized.jpg"
+                      alt="Anubhav Chaudhary - Senior Software Engineer and Tech Educator, passionate about sharing programming knowledge and building scalable solutions"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
 
                 {/* Basic Info */}

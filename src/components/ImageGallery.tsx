@@ -598,9 +598,8 @@ export const ImageGallery = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
           </div>
-        </div> */}
+        </div>
 
         {/* Call to Action */}
         <div className="text-center mt-20 animate-cyber-fade-up" style={{ animationDelay: '1.2s' }}>
