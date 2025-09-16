@@ -216,75 +216,75 @@ User query: ${prompt}`;
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className={`fixed bottom-20 right-6 z-50 bg-cyber-dark/95 backdrop-blur-xl shadow-2xl border border-neon-cyan/30 overflow-hidden ${
-              isMinimized ? 'w-80 h-16 rounded-2xl' : 'w-80 h-96 flex flex-col rounded-t-2xl'
+            className={`fixed bottom-16 sm:bottom-20 right-4 sm:right-6 z-50 bg-cyber-dark/95 backdrop-blur-xl shadow-2xl border border-neon-cyan/30 overflow-hidden ${
+              isMinimized ? 'w-[calc(100vw-2rem)] sm:w-80 h-12 sm:h-16 rounded-xl sm:rounded-2xl' : 'w-[calc(100vw-2rem)] sm:w-80 h-[calc(100vh-8rem)] sm:h-96 flex flex-col rounded-t-xl sm:rounded-t-2xl'
             }`}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{
               opacity: 1,
               scale: 1,
               y: 0,
-              height: isMinimized ? 64 : 384
+              height: isMinimized ? '3rem' : 'calc(100vh - 8rem)'
             }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.3 }}
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta p-4 flex items-center justify-between relative overflow-hidden flex-shrink-0">
+            <div className="bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta p-3 sm:p-4 flex items-center justify-between relative overflow-hidden flex-shrink-0">
               {/* Animated background pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-16 h-16 bg-cyber-light rounded-full -translate-x-8 -translate-y-8"></div>
                 <div className="absolute bottom-0 right-0 w-12 h-12 bg-cyber-light rounded-full translate-x-6 translate-y-6"></div>
               </div>
 
-              <div className="flex items-center gap-3 relative z-10">
+              <div className="flex items-center gap-2 sm:gap-3 relative z-10">
                 <motion.div
-                  className="w-10 h-10 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center border border-neon-cyan/50"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center border border-neon-cyan/50"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <Bot className="w-6 h-6 text-neon-cyan" />
+                  <Bot className="w-4 h-4 sm:w-6 sm:h-6 text-neon-cyan" />
                 </motion.div>
-                <div>
-                  <h3 className="text-cyber-dark font-bold text-base flex items-center gap-2 font-orbitron">
-                    AI Assistant
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-cyber-dark font-bold text-sm sm:text-base flex items-center gap-1 sm:gap-2 font-orbitron truncate">
+                    <span className="truncate">AI Assistant</span>
                     <motion.span
-                      className="w-2 h-2 bg-neon-green rounded-full animate-cyber-pulse"
+                      className="w-2 h-2 bg-neon-green rounded-full animate-cyber-pulse flex-shrink-0"
                       animate={{ opacity: [1, 0.3, 1] }}
                       transition={{ duration: 2, repeat: Infinity }}
                     />
                   </h3>
-                  <p className="text-cyber-dark/80 text-xs font-rajdhani">Your Tech Guide</p>
+                  <p className="text-cyber-dark/80 text-xs font-rajdhani truncate">Your Tech Guide</p>
                 </div>
               </div>
-              <div className="flex items-center gap-2 relative z-10">
+              <div className="flex items-center gap-1 sm:gap-2 relative z-10">
                 {/* Minimize Button */}
                 <motion.button
                   onClick={() => setIsMinimized(!isMinimized)}
-                  className="w-8 h-8 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-cyber-darker transition-all duration-200 border border-neon-cyan/30"
+                  className="w-7 h-7 sm:w-8 sm:h-8 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-cyber-darker transition-all duration-200 border border-neon-cyan/30"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   animate={{ rotate: isMinimized ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Minimize2 className="w-4 h-4 text-neon-cyan" />
+                  <Minimize2 className="w-3 h-3 sm:w-4 sm:h-4 text-neon-cyan" />
                 </motion.button>
 
                 {/* Close Button */}
                 <motion.button
                   onClick={() => setIsOpen(false)}
-                  className="w-8 h-8 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-cyber-darker transition-all duration-200 border border-neon-cyan/30"
+                  className="w-7 h-7 sm:w-8 sm:h-8 bg-cyber-dark/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-cyber-darker transition-all duration-200 border border-neon-cyan/30"
                   whileHover={{ scale: 1.1, rotate: 90 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <X className="w-4 h-4 text-neon-cyan" />
+                  <X className="w-3 h-3 sm:w-4 sm:h-4 text-neon-cyan" />
                 </motion.button>
               </div>
             </div>
 
             {/* Messages */}
             <motion.div
-              className={`overflow-y-auto p-4 space-y-4 bg-cyber-dark/30 ${
+              className={`overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4 bg-cyber-dark/30 ${
                 isMinimized ? 'h-0 opacity-0' : 'flex-1 opacity-100'
               }`}
               animate={{
@@ -302,22 +302,22 @@ User query: ${prompt}`;
                   transition={{ duration: 0.3 }}
                 >
                   <div
-                    className={`max-w-xs px-4 py-3 rounded-2xl text-sm shadow-lg border ${
+                    className={`max-w-[85%] sm:max-w-xs px-3 sm:px-4 py-2 sm:py-3 rounded-2xl text-xs sm:text-sm shadow-lg border ${
                       message.sender === 'user'
                         ? 'bg-gradient-to-r from-neon-cyan to-neon-purple text-cyber-dark border-neon-cyan/50 font-orbitron'
                         : 'bg-cyber-light/10 text-neon-cyan border-neon-cyan/30 backdrop-blur-sm font-rajdhani'
                     }`}
                   >
-                    <div className={`flex items-center gap-2 mb-2 ${
+                    <div className={`flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2 ${
                       message.sender === 'user' ? 'text-cyber-dark/80' : 'text-neon-cyan/80'
                     }`}>
                       {message.sender === 'user' ? (
-                        <User className="w-4 h-4" />
+                        <User className="w-3 h-3 sm:w-4 sm:h-4" />
                       ) : (
-                        <Bot className="w-4 h-4" />
+                        <Bot className="w-3 h-3 sm:w-4 sm:h-4" />
                       )}
                       <span className="text-xs font-medium">
-                        {message.sender === 'user' ? 'You' : 'AI Assistant'}
+                        {message.sender === 'user' ? 'You' : 'AI'}
                       </span>
                     </div>
                     <p className={`leading-relaxed ${
@@ -352,7 +352,7 @@ User query: ${prompt}`;
 
             {/* Input */}
             <div
-              className={`p-4 border-t border-neon-cyan/30 bg-cyber-dark/50 flex-shrink-0 ${
+              className={`p-3 sm:p-4 border-t border-neon-cyan/30 bg-cyber-dark/50 flex-shrink-0 ${
                 isMinimized ? 'hidden' : 'block'
               }`}
             >
@@ -363,21 +363,21 @@ User query: ${prompt}`;
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Ask about coding, tech, or Anubhav's work..."
-                  className="flex-1 px-4 py-3 bg-cyber-light/10 border border-neon-cyan/30 rounded-full focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:border-neon-cyan text-neon-cyan placeholder-neon-cyan/50 text-sm shadow-sm backdrop-blur-sm font-rajdhani"
+                  placeholder="Ask about coding, tech..."
+                  className="flex-1 px-3 sm:px-4 py-2 sm:py-3 bg-cyber-light/10 border border-neon-cyan/30 rounded-full focus:outline-none focus:ring-2 focus:ring-neon-cyan focus:border-neon-cyan text-neon-cyan placeholder-neon-cyan/50 text-xs sm:text-sm shadow-sm backdrop-blur-sm font-rajdhani"
                   disabled={isTyping}
                 />
                 <motion.button
                   onClick={handleSendMessage}
                   disabled={!inputMessage.trim() || isTyping}
-                  className="w-12 h-12 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta rounded-full flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 border border-cyber-dark/50"
+                  className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-magenta rounded-full flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-200 border border-cyber-dark/50"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   {isTyping ? (
-                    <Loader2 className="w-5 h-5 text-cyber-dark animate-spin" />
+                    <Loader2 className="w-4 h-4 sm:w-5 sm:h-5 text-cyber-dark animate-spin" />
                   ) : (
-                    <Send className="w-5 h-5 text-cyber-dark" />
+                    <Send className="w-4 h-4 sm:w-5 sm:h-5 text-cyber-dark" />
                   )}
                 </motion.button>
               </div>

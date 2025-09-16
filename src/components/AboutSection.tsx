@@ -14,10 +14,10 @@ export const AboutSection = () => {
   ];
 
   const timeline = [
-    { year: "2021", title: "Started Coding", description: "Began my programming journey" },
-    { year: "2022", title: "First Professional Role", description: "Joined first software development position" },
+    { year: "20", title: "Started Coding", description: "Began my programming journey" },
+    { year: "2021", title: "First Professional Role", description: "Joined first software development position" },
     { year: "2023", title: "Senior Engineer", description: "Promoted to Senior Software Engineer role" },
-    { year: "2024", title: "Content Creation", description: "Started @anubhav.codes on Instagram" },
+    { year: "2025", title: "Senior Softwrae Engineer", description: "WoSenior Software Engineer" }
   ];
 
   const funFacts = [
@@ -28,26 +28,26 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6">
-      <div className="container mx-auto">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+      <div className="container mx-auto max-w-7xl">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-cyber-fade-up">
-          <h2 className="font-orbitron font-bold mb-6 animate-cyber-glow">
+        <div className="text-center mb-12 sm:mb-16 animate-cyber-fade-up">
+          <h2 className="font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow text-2xl sm:text-3xl lg:text-4xl">
             About <span className="gradient-text animate-neon-flicker">Me</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani px-4">
             Discover my journey as a Senior Software Engineer passionate about
             building scalable solutions and empowering developers through content creation.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Profile Card */}
           <div className="lg:col-span-1">
             <Card className="cyber-card hover-lift animate-cyber-fade-up">
               <CardContent className="p-8 text-center">
                 {/* Profile Image */}
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-neon-cyan/50 animate-cyber-pulse">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-3 sm:border-4 border-neon-cyan/50 animate-cyber-pulse">
                   <picture>
                     {/* AVIF format for modern browsers */}
                     <source srcSet="/Anubhav-img-avif.avif" type="image/avif" />
@@ -67,13 +67,13 @@ export const AboutSection = () => {
                 </div>
 
                 {/* Basic Info */}
-                <div className="space-y-4 mb-8">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   <div>
-                    <h3 className="text-2xl font-orbitron font-bold mb-2 animate-cyber-glow">Anubhav Chaudhary</h3>
-                    <p className="text-muted-foreground font-rajdhani">Senior Software Engineer & Content Creator</p>
+                    <h3 className="text-xl sm:text-2xl font-orbitron font-bold mb-1 sm:mb-2 animate-cyber-glow">Anubhav Chaudhary</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground font-rajdhani">Senior Software Engineer & Content Creator</p>
                   </div>
 
-                  <p className="text-sm text-muted-foreground leading-relaxed font-rajdhani">
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed font-rajdhani px-2 sm:px-0">
                     I'm Anubhav Chaudhary — a Senior Software Engineer passionate about building scalable solutions and sharing knowledge.
                     Through my Instagram @anubhav.codes, I create daily programming tips, tutorials, and behind-the-scenes development
                     content to help fellow developers grow.
@@ -81,39 +81,39 @@ export const AboutSection = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="space-y-3 mb-8">
-                  <Button className="w-full cyber-btn font-orbitron font-semibold">
+                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 px-2 sm:px-0">
+                  <Button className="w-full cyber-btn font-orbitron font-semibold text-sm sm:text-base">
                     <Instagram className="w-4 h-4 mr-2" />
                     Follow on Instagram
                   </Button>
-                  <Button variant="outline" className="w-full cyber-btn-outline font-orbitron font-semibold">
+                  <Button variant="outline" className="w-full cyber-btn-outline font-orbitron font-semibold text-sm sm:text-base">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>
                 </div>
 
                 {/* Quick Stats */}
-                <div className="grid grid-cols-3 gap-4 text-center border-t border-neon-cyan/30 pt-6">
+                <div className="grid grid-cols-3 gap-3 sm:gap-4 text-center border-t border-neon-cyan/30 pt-4 sm:pt-6 px-2 sm:px-0">
                   <div className="animate-cyber-pulse">
                     <div className="flex items-center justify-center text-neon-cyan mb-1">
-                      <MapPin className="w-4 h-4 mr-1" />
+                      <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                     </div>
                     <div className="text-xs text-muted-foreground font-rajdhani">Based in</div>
-                    <div className="text-sm font-orbitron font-medium">Bangalore, IN</div>
+                    <div className="text-xs sm:text-sm font-orbitron font-medium">Bangalore, IN</div>
                   </div>
                   <div className="animate-cyber-pulse" style={{ animationDelay: '0.1s' }}>
                     <div className="flex items-center justify-center text-neon-green mb-1">
-                      <div className="w-2 h-2 bg-neon-green rounded-full mr-2 animate-cyber-pulse"></div>
+                      <div className="w-2 h-2 bg-neon-green rounded-full mr-1 sm:mr-2 animate-cyber-pulse"></div>
                     </div>
                     <div className="text-xs text-muted-foreground font-rajdhani">Status</div>
-                    <div className="text-sm font-orbitron font-medium text-neon-green">Available</div>
+                    <div className="text-xs sm:text-sm font-orbitron font-medium text-neon-green">Available</div>
                   </div>
                   <div className="animate-cyber-pulse" style={{ animationDelay: '0.2s' }}>
                     <div className="flex items-center justify-center text-neon-magenta mb-1">
-                      <Award className="w-4 h-4 mr-1" />
+                      <Award className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                     </div>
                     <div className="text-xs text-muted-foreground font-rajdhani">Experience</div>
-                    <div className="text-sm font-orbitron font-medium">5+ Years</div>
+                    <div className="text-xs sm:text-sm font-orbitron font-medium">5+ Years</div>
                   </div>
                 </div>
               </CardContent>
