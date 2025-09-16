@@ -9,10 +9,10 @@ export const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com/code.clash", label: "Instagram" },
-    { icon: Twitter, href: "https://twitter.com/codeclashIg", label: "Twitter" },
-    { icon: Linkedin, href: "https://linkedin.com/in/imtiyaz-nandasaniya", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/imtiyazCode", label: "GitHub" },
+    { icon: Instagram, href: "https://instagram.com/anubhav___13", label: "Instagram" },
+    { icon: Twitter, href: "https://instagram.com/anubhav___13", label: "Twitter" },
+    { icon: Linkedin, href: "https://linkedin.com/in/anubhav-chaudhary", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/13anubhav", label: "GitHub" },
   ];
 
   return (
