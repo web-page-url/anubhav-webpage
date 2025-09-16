@@ -8,6 +8,7 @@ import { ImageGallery } from "@/components/ImageGallery";
 import { TechStackSection } from "@/components/TechStackSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

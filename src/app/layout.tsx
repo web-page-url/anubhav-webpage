@@ -80,19 +80,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://anubhav.codes',
   },
-
-  // App metadata for mobile
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'default',
-    title: 'Anubhav.Codes',
-  },
-
-  formatDetection: {
-    telephone: false,
-    email: false,
-    address: false,
-  },
 }
 
 export default function RootLayout({

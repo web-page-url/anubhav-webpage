@@ -56,9 +56,9 @@ export const Footer = () => {
       <Button
         onClick={scrollToTop}
         size="icon"
-        className="fixed bottom-8 right-8 bg-primary/90 hover:bg-primary hover-glow animate-float"
+        className="fixed bottom-24 left-8 bg-gradient-to-r from-neon-cyan to-neon-purple hover:from-neon-cyan/80 hover:to-neon-purple/80 border border-neon-cyan/50 hover:border-neon-cyan animate-cyber-pulse shadow-lg hover:shadow-neon-cyan/50"
       >
-        <ArrowUp className="w-5 h-5" />
+        <ArrowUp className="w-5 h-5 text-cyber-dark" />
         <span className="sr-only">Back to top</span>
       </Button>
     </footer>
