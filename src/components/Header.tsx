@@ -15,7 +15,7 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-orbitron font-bold gradient-text animate-cyber-glow">
-            CODE.CLASH
+            Anubhav.Codes
           </div>
 
           {/* Desktop Navigation */}

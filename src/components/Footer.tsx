@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="text-center space-y-8">
           {/* Logo & Tagline */}
           <div className="space-y-4">
-            <div className="text-3xl font-bold gradient-text">CODE.CLASH</div>
+            <div className="text-3xl font-bold gradient-text">Anubhav.Codes</div>
             <p className="text-muted-foreground max-w-md mx-auto">
               Making coding accessible to everyone through daily content creation and development.
             </p>
@@ -46,7 +46,7 @@ export const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-border pt-8">
             <p className="text-sm text-muted-foreground">
-              © 2025 CODE.CLASH. Built with React & Tailwind CSS. All rights reserved.
+              © 2025 Anubhav.Codes. Built with React & Tailwind CSS. All rights reserved.
             </p>
           </div>
         </div>

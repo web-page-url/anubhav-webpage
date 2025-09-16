@@ -48,7 +48,7 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="cyber-btn font-orbitron font-semibold">
                 <Instagram className="w-5 h-5 mr-2" />
-                Follow @code.clash
+                Follow @anubhav.codes
               </Button>
               <Button variant="outline" size="lg" className="cyber-btn-outline font-orbitron font-semibold">
                 <Briefcase className="w-5 h-5 mr-2" />

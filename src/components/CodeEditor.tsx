@@ -7,7 +7,7 @@ export const CodeEditor = () => {
 
   const codeContent = `const contentCreator = {
   name: "Anubhav Chaudhary",
-  handle: "@code.clash",
+  handle: "@anubhav.codes",
   platform: "Instagram",
   content: ["Tutorials", "Tips", "Projects"],
 
@@ -57,7 +57,7 @@ export const CodeEditor = () => {
             {"  "}<span className="text-neon-cyan">name</span>:{" "}
             <span className="text-neon-purple">"Anubhav Chaudhary"</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">handle</span>:{" "}
-            <span className="text-neon-purple">"@code.clash"</span>,{"\n"}
+            <span className="text-neon-purple">"@anubhav.codes"</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">platform</span>:{" "}
             <span className="text-neon-purple">"Instagram"</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">content</span>:{" "}

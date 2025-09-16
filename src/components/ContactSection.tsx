@@ -7,7 +7,7 @@ export const ContactSection = () => {
     {
       icon: <Instagram className="w-6 h-6" />,
       platform: "Instagram",
-      handle: "@code.clash",
+      handle: "@anubhav.codes",
       color: "from-pink-500 to-purple-500",
       href: "https://instagram.com/code.clash"
     },
@@ -21,7 +21,7 @@ export const ContactSection = () => {
     {
       icon: <Twitter className="w-6 h-6" />,
       platform: "Twitter",
-      handle: "@codeclashIg",
+      handle: "@anubhav.codes",
       color: "from-blue-400 to-cyan-400",
       href: "https://twitter.com/codeclashIg"
     },
@@ -79,7 +79,7 @@ export const ContactSection = () => {
                     </div>
                     <div>
                       <div className="font-medium">Instagram</div>
-                      <div className="text-muted-foreground">@code.clash</div>
+                      <div className="text-muted-foreground">@anubhav.codes</div>
                     </div>
                   </div>
 

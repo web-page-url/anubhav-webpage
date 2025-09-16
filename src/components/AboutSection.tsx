@@ -15,7 +15,7 @@ export const AboutSection = () => {
   const timeline = [
     { year: "2021", title: "Started Coding", description: "Began my programming journey" },
     { year: "2022", title: "First Project", description: "Built my first web application" },
-    { year: "2023", title: "Content Creation", description: "Started @code.clash on Instagram" },
+    { year: "2023", title: "Content Creation", description: "Started @anubhav.codes on Instagram" },
     { year: "2024", title: "134.565k+ Followers", description: "Growing developer community" },
   ];
 
@@ -64,7 +64,7 @@ export const AboutSection = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed font-rajdhani">
                     I'm a passionate content creator and full-stack developer who loves
                     sharing knowledge with the developer community. Through my Instagram
-                    @code.clash, I create daily content about programming, web development,
+                    @anubhav.codes, I create daily content about programming, web development,
                     and tech insights.
                   </p>
                 </div>
