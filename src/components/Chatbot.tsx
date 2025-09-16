@@ -217,14 +217,14 @@ User query: ${prompt}`;
         {isOpen && (
           <motion.div
             className={`fixed bottom-16 sm:bottom-20 right-4 sm:right-6 z-50 bg-cyber-dark/95 backdrop-blur-xl shadow-2xl border border-neon-cyan/30 overflow-hidden ${
-              isMinimized ? 'w-[calc(100vw-2rem)] sm:w-80 h-12 sm:h-16 rounded-xl sm:rounded-2xl' : 'w-[calc(100vw-2rem)] sm:w-80 h-[calc(100vh-8rem)] sm:h-96 flex flex-col rounded-t-xl sm:rounded-t-2xl'
+              isMinimized ? 'w-80 sm:w-96 h-12 sm:h-16 rounded-xl sm:rounded-2xl' : 'w-80 sm:w-96 h-96 sm:h-[28rem] flex flex-col rounded-xl sm:rounded-2xl'
             }`}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{
               opacity: 1,
               scale: 1,
               y: 0,
-              height: isMinimized ? '3rem' : 'calc(100vh - 8rem)'
+              height: isMinimized ? '3rem' : '24rem'
             }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.3 }}
