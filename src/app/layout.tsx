@@ -39,20 +39,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Anubhav.Codes - Senior Software Engineer & Tech Educator',
     description: 'Senior Software Engineer passionate about building scalable solutions and sharing knowledge. Daily programming tips, tutorials, and behind-the-scenes development content on Instagram.',
-    url: 'https://anubhav.codes',
+    url: 'https://anubhav-webpage.vercel.app',
     siteName: 'Anubhav.Codes',
     type: 'website',
     locale: 'en_US',
     images: [
       {
-        url: '/Anubhav-img.jpg',
+        url: 'https://anubhav-webpage.vercel.app/Anubhav-img.jpg',
         width: 1200,
         height: 630,
         alt: 'Anubhav Chaudhary - Senior Software Engineer & Tech Educator',
         type: 'image/jpeg',
       },
       {
-        url: '/Anubhav-img.jpg',
+        url: 'https://anubhav-webpage.vercel.app/Anubhav-img.jpg',
         width: 600,
         height: 315,
         alt: 'Anubhav Chaudhary - Senior Software Engineer & Tech Educator',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     site: '@anubhav_codes',
     images: [
       {
-        url: '/Anubhav-img.jpg',
+        url: 'https://anubhav-webpage.vercel.app/Anubhav-img.jpg',
         alt: 'Anubhav Chaudhary - Senior Software Engineer & Tech Educator',
       }
     ],
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 
   // Additional metadata
   alternates: {
-    canonical: 'https://anubhav.codes',
+    canonical: 'https://anubhav-webpage.vercel.app',
   },
 }
 
@@ -133,6 +133,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//linkedin.com" />
         <link rel="dns-prefetch" href="//twitter.com" />
 
+        {/* Additional Social Media Meta Tags */}
+        <meta property="og:image:secure_url" content="https://anubhav-webpage.vercel.app/Anubhav-img.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta name="twitter:image:src" content="https://anubhav-webpage.vercel.app/Anubhav-img.jpg" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="630" />
+
         {/* Structured Data for SEO */}
         <script
           type="application/ld+json"
@@ -143,13 +152,13 @@ export default function RootLayout({
               "name": "Anubhav Chaudhary",
               "jobTitle": "Senior Software Engineer & Tech Educator",
               "description": "Senior Software Engineer passionate about building scalable solutions and sharing knowledge through daily programming content on Instagram",
-              "url": "https://anubhav.codes",
+              "url": "https://anubhav-webpage.vercel.app",
               "sameAs": [
                 "https://instagram.com/anubhav_codes",
                 "https://linkedin.com/in/anubhav-chaudhary",
                 "https://twitter.com/anubhav_codes"
               ],
-              "image": "https://anubhav.codes/Anubhav-img.jpg",
+              "image": "https://anubhav-webpage.vercel.app/Anubhav-img.jpg",
               "knowsAbout": [
                 "JavaScript",
                 "React",

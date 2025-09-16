@@ -25,7 +25,7 @@ Disallow: /node_modules/
 Disallow: /src/
 
 # Sitemap location
-Sitemap: https://anubhav.codes/sitemap.xml
+Sitemap: https://anubhav-webpage.vercel.app/sitemap.xml
 
 # Crawl delay (optional - remove if not needed)
 Crawl-delay: 1

@@ -5,12 +5,12 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://anubhav.codes/</loc>
+    <loc>https://anubhav-webpage.vercel.app/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://anubhav.codes/Anubhav-img.jpg</image:loc>
+      <image:loc>https://anubhav-webpage.vercel.app/Anubhav-img.jpg</image:loc>
       <image:title>Anubhav Chaudhary - Senior Software Engineer & Tech Educator</image:title>
       <image:caption>Senior Software Engineer passionate about building scalable solutions and sharing knowledge</image:caption>
     </image:image>
@@ -18,7 +18,7 @@
 
   <!-- About Section -->
   <url>
-    <loc>https://anubhav.codes/#about</loc>
+    <loc>https://anubhav-webpage.vercel.app/#about</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,7 +26,7 @@
 
   <!-- Services/Tech Stack Section -->
   <url>
-    <loc>https://anubhav.codes/#services</loc>
+    <loc>https://anubhav-webpage.vercel.app/#services</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -34,7 +34,7 @@
 
   <!-- Projects/Gallery Section -->
   <url>
-    <loc>https://anubhav.codes/#projects</loc>
+    <loc>https://anubhav-webpage.vercel.app/#projects</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -42,7 +42,7 @@
 
   <!-- Resume Section -->
   <url>
-    <loc>https://anubhav.codes/#resume</loc>
+    <loc>https://anubhav-webpage.vercel.app/#resume</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -50,7 +50,7 @@
 
   <!-- Contact Section -->
   <url>
-    <loc>https://anubhav.codes/#contact</loc>
+    <loc>https://anubhav-webpage.vercel.app/#contact</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
