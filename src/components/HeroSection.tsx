@@ -5,8 +5,8 @@ import { CodeEditor } from "./CodeEditor";
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen pt-20 pb-12 px-4 sm:px-6 relative">
-      <div className="container mx-auto max-w-7xl">
+    <section className="min-h-screen pt-20 pb-12 px-4 sm:px-6 relative overflow-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-160px)]">
           {/* Left Content */}
           <div className="space-y-8 animate-cyber-fade-up">
@@ -100,7 +100,7 @@ export const HeroSection = () => {
           {/* Right Content - Code Editor */}
           <div className="lg:pl-4 xl:pl-8 mt-8 lg:mt-0 animate-cyber-fade-up order-first lg:order-last" style={{ animationDelay: '0.2s' }}>
             <div className="scale-90 sm:scale-100">
-              <CodeEditor />
+            <CodeEditor />
             </div>
           </div>
         </div>

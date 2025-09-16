@@ -207,7 +207,7 @@ export const ImageGallery = () => {
       category: "Data Science",
       tech: ["Data Science", "Visualization", "Analytics"],
       color: "from-neon-purple to-neon-blue",
-      url: "#"
+      url: "https://github.com/13anubhav"
     },
     {
       id: 16,
@@ -218,7 +218,7 @@ export const ImageGallery = () => {
       category: "Mobile",
       tech: ["Mobile", "Android", "React Native"],
       color: "from-neon-blue to-neon-purple",
-      url: "#"
+      url: "https://github.com/13anubhav"
     }
   ];
 
@@ -228,76 +228,76 @@ export const ImageGallery = () => {
       name: "Advanced ML Models",
       description: "Machine learning models for predictive analytics and data insights",
       tech: ["Python", "TensorFlow", "Scikit-learn"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "Data Science"
     },
     {
       name: "Blockchain DApp",
       description: "Decentralized application with smart contract integration",
       tech: ["Blockchain", "Web3", "Smart Contracts"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "Blockchain"
     },
     {
       name: "IoT Dashboard",
       description: "Internet of Things monitoring and control dashboard",
       tech: ["IoT", "Sensors", "Real-time"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "IoT"
     },
     {
       name: "E-commerce Platform",
       description: "Full-featured online marketplace with payment integration",
       tech: ["E-commerce", "Payments", "Commerce"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "E-commerce"
     },
     {
       name: "Cloud Infrastructure",
       description: "Scalable cloud architecture and deployment solutions",
       tech: ["AWS", "Cloud", "Infrastructure"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "DevOps"
     },
     {
       name: "AR/VR Experience",
       description: "Augmented and Virtual Reality interactive experiences",
       tech: ["AR", "VR", "3D", "Interactive"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "AR/VR"
     },
     {
       name: "API Gateway",
       description: "Comprehensive API management and documentation platform",
       tech: ["API", "Microservices", "Documentation"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "Backend"
     },
     {
       name: "Security Suite",
       description: "Advanced cybersecurity tools and monitoring systems",
       tech: ["Security", "Monitoring", "Cybersecurity"],
-      url: "#",
+      url: "https://github.com/13anubhav",
       category: "Security"
     }
   ];
 
   return (
-    <section id="gallery" className="py-20 px-6">
-      <div className="container mx-auto">
+    <section id="gallery" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full overflow-x-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-cyber-fade-up">
-          <h2 className="font-orbitron font-bold mb-6 animate-cyber-glow">
+        <div className="text-center mb-12 sm:mb-16 animate-cyber-fade-up">
+          <h2 className="font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow text-2xl sm:text-3xl lg:text-4xl">
             Featured <span className="gradient-text animate-neon-flicker">Projects</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani px-4">
             A comprehensive showcase of 16 innovative projects spanning AI/ML, web development, gaming, healthcare,
             and creative solutions. Click on any project to explore the live demos and see my work in action.
           </p>
         </div>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gallery-grid">
+        {/* Image Grid - Hidden on mobile, only desktop/tablet */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gallery-grid">
           {images.map((image, index) => (
             <Card
               key={image.id}
@@ -406,62 +406,72 @@ export const ImageGallery = () => {
         </div>
 
         {/* Mobile Optimized Grid Alternative */}
-        <div className="md:hidden mt-12">
-          <div className="space-y-6">
+        <div className="md:hidden mt-12 sm:mt-16">
+          <div className="space-y-6 sm:space-y-8">
             {images.map((image, index) => (
               <Card
                 key={`mobile-${image.id}`}
-                className="cyber-card hover-lift animate-cyber-fade-up"
+                className="cyber-card hover-lift animate-cyber-fade-up min-h-[280px] sm:min-h-[320px]"
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                <CardContent className="p-4">
-                  <div className="flex gap-4">
-                    {/* Mobile Image */}
-                    <div className="flex-shrink-0">
-                      <div className="w-24 h-24 relative rounded-lg overflow-hidden">
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          fill
-                          className="object-cover"
-                          sizes="96px"
-                        />
-                      </div>
-                    </div>
+                <CardContent className="p-5 sm:p-7">
+                  <div className="flex flex-col gap-5">
+                     {/* Mobile Image - Much Bigger */}
+                     <div className="flex justify-center">
+                       <div className="w-40 h-40 sm:w-48 sm:h-48 relative rounded-lg overflow-hidden border-2 border-neon-cyan/30 shadow-lg">
+                         <Image
+                           src={image.src}
+                           alt={image.alt}
+                           fill
+                           className="object-cover"
+                           sizes="(max-width: 640px) 160px, 192px"
+                         />
+                       </div>
+                     </div>
 
                     {/* Mobile Content */}
-                    <div className="flex-1 min-w-0">
-                      <h4 className="font-orbitron font-bold text-lg mb-2 text-neon-cyan">
+                    <div className="text-center">
+                      <h4 className="font-orbitron font-bold text-lg sm:text-xl mb-3 text-neon-cyan animate-cyber-glow">
                         {image.title}
                       </h4>
-                      <p className="text-sm text-muted-foreground font-rajdhani mb-3 line-clamp-2">
+                      <p className="text-sm sm:text-base text-muted-foreground font-rajdhani mb-4 line-clamp-3 leading-relaxed px-2">
                         {image.description}
                       </p>
 
                       {/* Mobile Tech Stack */}
-                      <div className="flex flex-wrap gap-1 mb-3">
+                      <div className="flex flex-wrap justify-center gap-1 mb-4">
                         {image.tech.slice(0, 3).map((tech, i) => (
                           <Badge
                             key={i}
                             variant="outline"
-                            className="text-xs border-neon-cyan/30 text-neon-cyan"
+                            className="text-xs border-neon-cyan/30 text-neon-cyan px-2 py-1 animate-cyber-pulse"
                           >
                             {tech}
                           </Badge>
                         ))}
                       </div>
 
-                      {/* Mobile Category & Link */}
-                      <div className="flex items-center justify-between">
-                        <Badge className={`text-xs bg-gradient-to-r ${image.color} text-cyber-dark font-orbitron font-bold`}>
-                          {image.category}
-                        </Badge>
-                        <Button variant="outline" size="sm" className="hover-glow cyber-btn-outline" asChild>
-                          <a href={image.url} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-3 h-3 mr-1" />
-                            Demo
-                          </a>
-                        </Button>
+                      {/* Mobile Category & Link - More Prominent */}
+                      <div className="space-y-3">
+                        <div className="flex justify-center">
+                          <Badge className={`text-xs bg-gradient-to-r ${image.color} text-cyber-dark font-orbitron font-bold px-3 py-1`}>
+                            {image.category}
+                          </Badge>
+                        </div>
+
+                        {/* Live URL Display */}
+                        <div className="bg-cyber-dark/50 rounded-lg p-3 border border-neon-cyan/20">
+                          <p className="text-xs text-neon-cyan font-rajdhani mb-2">🔗 Live Demo:</p>
+                          <p className="text-xs text-muted-foreground font-mono break-all mb-2">
+                            {image.url.length > 40 ? `${image.url.substring(0, 37)}...` : image.url}
+                          </p>
+                          <Button variant="outline" size="sm" className="w-full hover-glow cyber-btn-outline bg-neon-cyan/10 hover:bg-neon-cyan/20 border-neon-cyan/50" asChild>
+                            <a href={image.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                              <ExternalLink className="w-4 h-4" />
+                              <span className="font-orbitron font-bold">View Live Demo</span>
+                            </a>
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -469,137 +479,10 @@ export const ImageGallery = () => {
               </Card>
             ))}
 
-            {/* Mobile Additional Projects Preview */}
-            <div className="mt-12">
-              <h4 className="font-orbitron font-bold text-xl mb-6 text-center text-neon-cyan animate-cyber-glow">
-                Featured Projects
-              </h4>
-              <div className="space-y-4">
-                {images.slice(5, 11).map((image, index) => (
-                  <Card
-                    key={`mobile-all-${index}`}
-                    className="cyber-card hover-lift animate-cyber-fade-up"
-                    style={{ animationDelay: `${0.8 + index * 0.1}s` }}
-                  >
-                    <CardContent className="p-4">
-                    <div className="flex gap-4">
-                      {/* Mobile Image */}
-                      <div className="flex-shrink-0">
-                        <div className="w-16 h-16 relative rounded-lg overflow-hidden">
-                          <Image
-                            src={image.src}
-                            alt={image.alt}
-                            fill
-                            className="object-cover"
-                            sizes="64px"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Project Info */}
-                      <div className="flex-1 min-w-0">
-                        <h5 className="font-orbitron font-bold text-sm text-neon-cyan mb-1">
-                          {image.title}
-                        </h5>
-                        <Badge className="text-xs bg-neon-purple/20 text-neon-purple border-neon-purple/50 mb-2">
-                          {image.category}
-                        </Badge>
-                        <div className="flex flex-wrap gap-1">
-                          {image.tech.slice(0, 2).map((tech, i) => (
-                            <Badge key={i} variant="outline" className="text-xs border-neon-cyan/30 text-neon-cyan">
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Link */}
-                      <Button variant="outline" size="sm" className="hover-glow cyber-btn-outline ml-2" asChild>
-                        <a href={image.url} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* Additional Projects Section */}
-        {/* <div className="mt-20">
-          <div className="text-center mb-12 animate-cyber-fade-up">
-            <h3 className="font-orbitron font-bold text-3xl mb-4 text-neon-cyan animate-cyber-glow">
-              All Projects
-            </h3>
-            <p className="text-muted-foreground font-rajdhani max-w-2xl mx-auto">
-              Explore additional innovative solutions including blockchain, IoT, AR/VR, and advanced backend systems
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {allProjects.map((project, index) => (
-              <Card
-                key={index}
-                className="cyber-card hover-lift animate-cyber-fade-up group"
-                style={{ animationDelay: `${0.7 + index * 0.05}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-neon-cyan to-neon-magenta flex items-center justify-center animate-cyber-pulse">
-                      {project.category === "Data Science" && <span className="text-cyber-dark text-lg">📊</span>}
-                      {project.category === "Blockchain" && <span className="text-cyber-dark text-lg">⛓️</span>}
-                      {project.category === "IoT" && <span className="text-cyber-dark text-lg">📡</span>}
-                      {project.category === "E-commerce" && <span className="text-cyber-dark text-lg">🛒</span>}
-                      {project.category === "DevOps" && <span className="text-cyber-dark text-lg">☁️</span>}
-                      {project.category === "AR/VR" && <span className="text-cyber-dark text-lg">🥽</span>}
-                      {project.category === "Backend" && <span className="text-cyber-dark text-lg">⚙️</span>}
-                      {project.category === "Security" && <span className="text-cyber-dark text-lg">🔒</span>}
-                    </div>
-
-                 
-                    <div className="flex-1 min-w-0">
-                      <h4 className="font-orbitron font-bold text-lg mb-2 text-neon-cyan group-hover:text-neon-magenta transition-colors duration-300">
-                        {project.name}
-                      </h4>
-                      <p className="text-sm text-muted-foreground font-rajdhani mb-3 line-clamp-2">
-                        {project.description}
-                      </p>
-
-                    
-                      <div className="flex flex-wrap gap-1 mb-4">
-                        {project.tech.map((tech, i) => (
-                          <Badge
-                            key={i}
-                            variant="outline"
-                            className="text-xs border-neon-cyan/30 text-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-
-                   
-                      <div className="flex items-center justify-between">
-                        <Badge className="text-xs bg-neon-purple/20 text-neon-purple border-neon-purple/50">
-                          {project.category}
-                        </Badge>
-                        <Button variant="outline" size="sm" className="hover-glow cyber-btn-outline" asChild>
-                          <a href={project.url} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-3 h-3 mr-1" />
-                            Demo
-                          </a>
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-          </div>
-        </div>
+       
 
         {/* Call to Action */}
         <div className="text-center mt-20 animate-cyber-fade-up" style={{ animationDelay: '1.2s' }}>

@@ -28,8 +28,8 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="container mx-auto max-w-7xl">
+    <section id="about" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full overflow-x-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16 animate-cyber-fade-up">
           <h2 className="font-orbitron font-bold mb-4 sm:mb-6 animate-cyber-glow text-2xl sm:text-3xl lg:text-4xl">

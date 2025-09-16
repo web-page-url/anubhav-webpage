@@ -48,17 +48,17 @@ export const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="container mx-auto">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full overflow-x-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
         {/* Main CTA */}
-        <div className="text-center mb-20 animate-fade-up">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-up">
           <div className="inline-block">
-            <h2 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-4 sm:mb-6 font-orbitron">
               Let's Connect
             </h2>
-            <div className="w-32 h-1 bg-gradient-primary mx-auto mb-8"></div>
+            <div className="w-24 sm:w-32 h-1 bg-gradient-primary mx-auto mb-6 sm:mb-8"></div>
           </div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto px-4 font-rajdhani">
             Whether you want to collaborate on content, need development work,
             or just want to say hi - I'd love to hear from you!
           </p>

@@ -20,14 +20,14 @@ export const TechStackSection = () => {
   ];
 
   return (
-    <section id="tech-stack" className="py-20 px-6">
-      <div className="container mx-auto">
+    <section id="tech-stack" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full overflow-x-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-up">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 font-orbitron">
             Tools & <span className="gradient-text">Technologies</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4 font-rajdhani">
             Explore the tools and technologies I rely on to design, develop,
             and deploy impactful digital experiences.
           </p>

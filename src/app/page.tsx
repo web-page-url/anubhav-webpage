@@ -12,9 +12,9 @@ import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground w-full overflow-x-hidden">
       <Header />
-      <main>
+      <main className="w-full">
         <HeroSection />
         {/* <ServicesSection /> */}
         {/* <BlogsSection /> */}

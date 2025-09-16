@@ -16,36 +16,36 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-card/30 border-t border-border py-12 px-6 relative">
-      <div className="container mx-auto">
-        <div className="text-center space-y-8">
+    <footer className="bg-card/30 border-t border-border py-8 sm:py-12 px-4 sm:px-6 relative w-full overflow-x-hidden">
+      <div className="container mx-auto max-w-7xl w-full">
+        <div className="text-center space-y-6 sm:space-y-8">
           {/* Logo & Tagline */}
-          <div className="space-y-4">
-            <div className="text-3xl font-bold gradient-text">Anubhav.Codes</div>
-            <p className="text-muted-foreground max-w-md mx-auto">
+          <div className="space-y-3 sm:space-y-4">
+            <div className="text-2xl sm:text-3xl font-bold gradient-text font-orbitron">Anubhav.Codes</div>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-md mx-auto px-4 font-rajdhani">
               Making coding accessible to everyone through daily content creation and development.
             </p>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-4 sm:space-x-6">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-card/50 hover:bg-primary/20 transition-all hover-lift hover-glow"
+                className="p-2 sm:p-3 rounded-xl bg-card/50 hover:bg-primary/20 transition-all hover-lift hover-glow"
                 aria-label={social.label}
               >
-                <social.icon className="w-5 h-5" />
+                <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             ))}
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-border pt-8">
-            <p className="text-sm text-muted-foreground">
+          <div className="border-t border-border pt-6 sm:pt-8">
+            <p className="text-xs sm:text-sm text-muted-foreground px-4 font-rajdhani">
               © 2025 Anubhav.Codes. Built with React & Tailwind CSS. All rights reserved.
             </p>
           </div>
