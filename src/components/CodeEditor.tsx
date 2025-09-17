@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export const CodeEditor = () => {
   const [typedText, setTypedText] = useState("");
 
-const codeContent = `const contentCreator = {
+  const codeContent = `const contentCreator = {
   name: "Anubhav Chaudhary",
   handle: "@anubhav.codes",
   platform: "Instagram",
