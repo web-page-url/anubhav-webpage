@@ -46,7 +46,7 @@ export const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-border pt-6 sm:pt-8">
             <p className="text-xs sm:text-sm text-muted-foreground px-4 font-rajdhani">
-              © 2025 Anubhav.Codes. Built with React & Tailwind CSS. All rights reserved.
+              © 2025 Anubhav.Codes. Built with 🧡. All rights reserved.
             </p>
           </div>
         </div>
