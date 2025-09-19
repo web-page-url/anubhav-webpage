@@ -247,14 +247,14 @@ User query: ${prompt}`;
                 </motion.div>
                 <div className="min-w-0 flex-1">
                   <h3 className="text-cyber-dark font-bold text-sm sm:text-base flex items-center gap-1 sm:gap-2 font-orbitron truncate">
-                    <span className="truncate">AI Assistant</span>
+                    <span className="truncate">Anubhav AI</span>
                     <motion.span
                       className="w-2 h-2 bg-neon-green rounded-full animate-cyber-pulse flex-shrink-0"
                       animate={{ opacity: [1, 0.3, 1] }}
                       transition={{ duration: 2, repeat: Infinity }}
                     />
                   </h3>
-                  <p className="text-cyber-dark/80 text-xs font-rajdhani truncate">Your Tech Guide</p>
+                  <p className="text-cyber-dark/80 text-xs font-rajdhani truncate">Anubhav's AI Assistant</p>
                 </div>
               </div>
               <div className="flex items-center gap-1 sm:gap-2 relative z-10">
