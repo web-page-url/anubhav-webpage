@@ -1,0 +1,40 @@
+ How I Ensure My Frontend Work Is Easy to Maintain for Other Developers
+
+ 1. Modular & Component-Driven Development
+1.1 Break the UI into reusable atomic components (buttons, cards, modals).
+1.2 Avoid duplicate code by reusing components across pages.
+
+ 2. Clear Project Structure
+2.1 Follow a consistent folder structure (components/, hooks/, utils/, pages/).
+2.2 Helps new developers navigate and locate files quickly.
+
+ 3. Readable & Consistent Code Style
+3.1 Use ESLint + Prettier for formatting.
+3.2 Stick to clear naming conventions for variables, functions, and components (e.g., UserCard, BookingForm).
+
+ 4. State Management Best Practices
+4.1 Avoid prop drilling by using Redux or React Context where needed.
+4.2 Keep global state minimal and localize state whenever possible.
+4.3 Document state structure and actions for easy extension.
+
+ 5. API Layer Abstraction
+5.1 Never call APIs directly inside components.
+5.2 Maintain a dedicated services/api.js or custom hooks (useAPI.js) for API calls.
+5.3 Makes it easy to swap or update APIs without touching multiple files.
+
+ 6. Documentation & Comments
+6.1 Use JSDoc-style comments for complex functions and hooks.
+6.2 Provide README files in important modules for quick onboarding.
+
+ 7. Testing
+7.1 Write unit tests for components.
+7.2 Add integration tests for critical user flows (e.g., login, booking, checkout).
+7.3 Ensures stability when future developers modify code.
+
+ 8. Scalable Styling Approach
+8.1 Stick to a single styling approach (CSS Modules, TailwindCSS, or styled-components).
+8.2 Follow a design system so devs know which styles/components to reuse.
+
+ 9. Code Reviews & Knowledge Sharing
+9.1 Participate in code reviews to maintain consistency and best practices.
+9.2 Document architectural decisions in Confluence/Notion so new developers know why a solution was chosen

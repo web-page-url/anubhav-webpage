@@ -27,6 +27,12 @@ export const Header = () => {
               About
             </a>
             <a
+              href="#certificates"
+              className="text-muted-foreground hover:text-neon-cyan transition-all duration-300 hover:animate-cyber-glow font-rajdhani font-medium"
+            >
+              Certificates
+            </a>
+            <a
               href="#resume"
               className="text-muted-foreground hover:text-neon-cyan transition-all duration-300 hover:animate-cyber-glow font-rajdhani font-medium"
             >
@@ -87,6 +93,13 @@ export const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blogs
+              </a>
+              <a
+                href="#certificates"
+                className="text-muted-foreground hover:text-neon-cyan transition-all duration-300 hover:animate-cyber-glow font-rajdhani font-medium py-2 px-3 rounded-lg hover:bg-neon-cyan/10"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Certificates
               </a>
               <a
                 href="#resume"

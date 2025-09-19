@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { BlogsSection } from "@/components/BlogsSection";
 import { AboutSection } from "@/components/AboutSection";
+import { CertificatesSection } from "@/components/CertificatesSection";
 import { ResumeSection } from "@/components/ResumeSection";
 import { ImageGallery } from "@/components/ImageGallery";
 import { TechStackSection } from "@/components/TechStackSection";
@@ -19,6 +20,7 @@ export default function Home() {
         {/* <ServicesSection /> */}
         {/* <BlogsSection /> */}
         <AboutSection />
+        <CertificatesSection />
         <ResumeSection />
         <ImageGallery />
         <TechStackSection />
