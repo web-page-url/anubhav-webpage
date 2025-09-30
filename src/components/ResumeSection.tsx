@@ -104,20 +104,20 @@ export const ResumeSection = () => {
   ];
 
   const projects = [
-    { name: "AI with Voice Assistance", url: "https://ai-anubhav.netlify.app/ai", tech: ["AI", "Voice"] },
-    { name: "Amazing Daily Planner", url: "https://amazing-daily-planner.netlify.app/", tech: ["React", "Planning"] },
-    { name: "Bawal Code (Hindi Programming Language)", url: "https://bawal-code.vercel.app/", tech: ["Programming", "Language"] },
-    { name: "Code Spark AI (Code Generator Chatbot)", url: "https://code-spark-ai.vercel.app/", tech: ["AI", "Chatbot"] },
-    { name: "Sticker Magic (Custom Stickers App)", url: "https://sticker-magic.vercel.app/", tech: ["React", "Creative"] },
-    { name: "Better Prompt Tool (AI Prompt Optimizer)", url: "https://better-prompt-alpha.vercel.app/", tech: ["AI", "Optimization"] },
-    { name: "3D Shooting Game (Three.js)", url: "https://anubhav-3d-shooting-game.netlify.app/", tech: ["3D", "Game"] },
-    { name: "AI Doctor 24/7", url: "https://doctor247.netlify.app/", tech: ["AI", "Healthcare"] },
-    { name: "Text-to-Speech Converter", url: "https://anubhav-text-to-speech.netlify.app/", tech: ["Audio", "AI"] },
-    { name: "QR Code Generator", url: "https://123anubhav.github.io/qr_link/", tech: ["QR", "Generator"] },
-    { name: "GitHub User Search App", url: "https://anubhav-github-users-search.netlify.app/", tech: ["GitHub", "Search"] },
-    { name: "AI Travel Assistant Chatbot", url: "https://anubhav-holiday-socho-ai.netlify.app/", tech: ["AI", "Travel"] },
-    { name: "AI Powered Python Learning App", url: "https://next-gen-python-learn.vercel.app/", tech: ["AI", "Education"] },
-    { name: "Portfolio Website", url: "https://anubhav-webpage.netlify.app/", tech: ["Portfolio", "React"] }
+    { name: "AI with Voice Assistance", url: "https://anubhav-ai.vercel.app/", tech: ["AI", "Voice"] },
+    { name: "Amazing Daily Planner", url: "https://amazing-daily-planner.netlify.app", tech: ["React", "Planning"] },
+    { name: "Bawal Code (Hindi Programming Language)", url: "https://bawal-code.vercel.app", tech: ["Programming", "Language"] },
+    { name: "Code Spark AI (Code Generator Chatbot)", url: "https://code-spark-ai.vercel.app", tech: ["AI", "Chatbot"] },
+    { name: "Sticker Magic (Custom Stickers App)", url: "https://sticker-magic.vercel.app", tech: ["React", "Creative"] },
+    { name: "Better Prompt Tool (AI Prompt Optimizer)", url: "https://better-prompt-alpha.vercel.app", tech: ["AI", "Optimization"] },
+    { name: "3D Shooting Game (Three.js)", url: "https://anubhav-3d-shooting-game.netlify.app", tech: ["3D", "Game"] },
+    { name: "AI Doctor 24/7", url: "https://doctor247.netlify.app", tech: ["AI", "Healthcare"] },
+    { name: "Text-to-Speech Converter", url: "https://anubhav-text-to-speech.netlify.app", tech: ["Audio", "AI"] },
+    { name: "QR Code Generator", url: "https://123anubhav.github.io/qr_link", tech: ["QR", "Generator"] },
+    { name: "GitHub User Search App", url: "https://anubhav-github-users-search.netlify.app", tech: ["GitHub", "Search"] },
+    { name: "AI Travel Assistant Chatbot", url: "https://anubhav-holiday-socho-ai.netlify.app", tech: ["AI", "Travel"] },
+    { name: "AI Powered Python Learning App", url: "https://next-gen-python-learn.vercel.app", tech: ["AI", "Education"] },
+    { name: "Portfolio Website", url: "https://anubhav-webpage.netlify.app", tech: ["Portfolio", "React"] }
   ];
 
   const skills = {
