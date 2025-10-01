@@ -18,7 +18,7 @@ export const CodeEditor = () => {
   },
 
   availableFor: ["Freelance Projects", "Mentorship", "Collabs"],
-  website: "https://anubhav.codes" // Portfolio URL
+  website: "https://anubhav-webpage.vercel.app/" // Portfolio URL
 };`;
 
   useEffect(() => {
@@ -95,7 +95,7 @@ export const CodeEditor = () => {
             <span className="text-neon-purple">Collabs</span>
             <span className="text-foreground">"]</span>,{"\n"}
             {"  "}<span className="text-neon-cyan">website</span>:{" "}
-            <span className="text-neon-purple">"https://anubhav.codes"</span>{"\n"}
+            <span className="text-neon-purple">"https://anubhav-webpage.vercel.app/"</span>{"\n"}
             <span className="text-foreground">{"}"}</span>;
           </pre>
           <div className="mt-4 flex items-center">

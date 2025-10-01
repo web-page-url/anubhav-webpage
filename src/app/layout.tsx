@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'Technical Content Creator',
     'Coding Education'
   ],
-  authors: [{ name: 'Anubhav Chaudhary', url: 'https://anubhav.codes' }],
+  authors: [{ name: 'Anubhav Chaudhary', url: 'https://anubhav-webpage.vercel.app/' }],
   creator: 'Anubhav Chaudhary',
   publisher: 'Anubhav.Codes',
 
