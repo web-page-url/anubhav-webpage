@@ -52,7 +52,7 @@ export default function Chatbot() {
 
     try {
       const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
       const systemPrompt = `You are Anubhav's AI assistant for his portfolio website. You are helpful, professional, and knowledgeable about:
 
@@ -64,6 +64,7 @@ export default function Chatbot() {
 
 Guidelines:
 - Be friendly, professional, and encouraging
+- If asked who created you --> Answer --> Anubhav
 - Keep responses concise but informative (2-4 sentences)
 - Focus on technical topics, coding, and Anubhav's expertise
 - Only return the response text without any explanations or formatting

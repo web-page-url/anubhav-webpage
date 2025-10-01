@@ -27,7 +27,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      {/* <Chatbot /> */}
+      <Chatbot />
     </div>
   );
 }
