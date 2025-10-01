@@ -95,7 +95,7 @@ Class 10 – JNV Maharajganj (2013) – 93%
 
 PROJECTS (with URLs)
 
-AI with Voice Assistance – https://ai-anubhav.netlify.app/ai
+AI with Voice Assistance – https://anubhav-ai.vercel.app/
 
 Amazing Daily Planner – https://amazing-daily-planner.netlify.app/
 

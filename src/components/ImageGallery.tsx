@@ -53,7 +53,7 @@ export const ImageGallery = () => {
       category: "AI/ML",
       tech: ["AI", "Voice", "NLP", "React"],
       color: "from-neon-cyan to-neon-blue",
-      url: "https://ai-anubhav.netlify.app/ai"
+      url: "https://anubhav-ai.vercel.app/"
     },
     {
       id: 2,

@@ -104,7 +104,7 @@ export const ResumeSection = () => {
   ];
 
   const projects = [
-    { name: "AI with Voice Assistance", url: "https://ai-anubhav.netlify.app/ai", tech: ["AI", "Voice"] },
+    { name: "AI with Voice Assistance", url: "https://anubhav-ai.vercel.app/", tech: ["AI", "Voice"] },
     { name: "Amazing Daily Planner", url: "https://amazing-daily-planner.netlify.app/", tech: ["React", "Planning"] },
     { name: "Bawal Code (Hindi Programming Language)", url: "https://bawal-code.vercel.app/", tech: ["Programming", "Language"] },
     { name: "Code Spark AI (Code Generator Chatbot)", url: "https://code-spark-ai.vercel.app/", tech: ["AI", "Chatbot"] },
