@@ -351,18 +351,18 @@ export const ResumeSection = () => {
 
           {/* Skills */}
           <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-8 flex items-center">
-                <Code className="w-6 h-6 mr-3 text-primary" />
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center">
+                <Code className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 text-primary" />
                 Technical Skills
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
                 {Object.entries(skills).map(([category, skillList], index) => (
                   <div key={category} className="animate-fade-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
-                    <h4 className="font-bold mb-3 capitalize text-primary">{category.replace('_', ' & ')}</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-bold mb-2 sm:mb-3 text-sm sm:text-base capitalize text-primary">{category.replace('_', ' & ')}</h4>
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {skillList.map((skill, i) => (
-                        <Badge key={i} variant="outline" className="text-xs hover-glow">
+                        <Badge key={i} variant="outline" className="text-xs hover-glow px-2 py-1 text-xs">
                           {skill}
                         </Badge>
                       ))}
