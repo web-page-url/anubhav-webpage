@@ -117,7 +117,15 @@ export const ResumeSection = () => {
     { name: "GitHub User Search App", url: "https://anubhav-github-users-search.netlify.app", tech: ["GitHub", "Search"] },
     { name: "AI Travel Assistant Chatbot", url: "https://anubhav-holiday-socho-ai.netlify.app", tech: ["AI", "Travel"] },
     { name: "AI Powered Python Learning App", url: "https://next-gen-python-learn.vercel.app", tech: ["AI", "Education"] },
-    { name: "Portfolio Website", url: "https://anubhav-webpage.netlify.app", tech: ["Portfolio", "React"] }
+    { name: "Portfolio Website", url: "https://anubhav-webpage.netlify.app", tech: ["Portfolio", "React"] },
+    { name: "Learn Explore Grow", url: "https://learn-explore-grow.vercel.app/", tech: ["Education", "Learning"] },
+    { name: "PRD to Prototype", url: "https://prd-to-prototype.vercel.app/", tech: ["Product", "Design"] },
+    { name: "Self Help Hub", url: "https://self-help-hub.vercel.app/", tech: ["Self-Help", "Productivity"] },
+    { name: "GitHub Commit Tool", url: "https://github-commit.vercel.app/", tech: ["GitHub", "Tool"] },
+    { name: "Tra Verse AI", url: "https://tra-verse-ai.vercel.app/", tech: ["AI", "Travel"] },
+    { name: "Rise On", url: "https://rise-on.vercel.app/", tech: ["Motivation", "Goals"] },
+    { name: "Wedding Vibes", url: "https://wedding-vibes.vercel.app/", tech: ["Wedding", "Planning"] },
+    { name: "3D Simulation", url: "https://3d-simulation.vercel.app/", tech: ["3D", "Simulation"] }
   ];
 
   const skills = {

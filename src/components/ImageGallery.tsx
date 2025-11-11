@@ -219,6 +219,94 @@ export const ImageGallery = () => {
       tech: ["Mobile", "Android", "React Native"],
       color: "from-neon-blue to-neon-purple",
       url: "https://github.com/13anubhav"
+    },
+    {
+      id: 17,
+      src: "/img-17.png",
+      alt: "Learn Explore Grow - Learning Platform",
+      title: "Learn Explore Grow",
+      description: "Interactive learning platform designed to help users discover new skills and expand their knowledge through engaging content and personalized learning paths",
+      category: "Education",
+      tech: ["Education", "Learning", "Interactive"],
+      color: "from-neon-cyan to-neon-magenta",
+      url: "https://learn-explore-grow.vercel.app/"
+    },
+    {
+      id: 18,
+      src: "/img-18.png",
+      alt: "PRD to Prototype - Product Development Tool",
+      title: "PRD to Prototype",
+      description: "Streamlined tool that transforms Product Requirements Documents into interactive prototypes, bridging the gap between planning and development",
+      category: "Product",
+      tech: ["Product", "Design", "Prototyping"],
+      color: "from-neon-purple to-neon-cyan",
+      url: "https://prd-to-prototype.vercel.app/"
+    },
+    {
+      id: 19,
+      src: "/img-19.png",
+      alt: "Self Help Hub - Personal Development Platform",
+      title: "Self Help Hub",
+      description: "Comprehensive personal development platform offering resources, tools, and guidance for self-improvement, goal setting, and personal growth",
+      category: "Self-Help",
+      tech: ["Self-Help", "Productivity", "Personal Development"],
+      color: "from-neon-magenta to-neon-blue",
+      url: "https://self-help-hub.vercel.app/"
+    },
+    {
+      id: 20,
+      src: "/img-20.png",
+      alt: "GitHub Commit Tool - Development Utility",
+      title: "GitHub Commit Tool",
+      description: "Powerful utility tool for GitHub users to manage commits, track changes, and streamline development workflows with advanced features",
+      category: "Development",
+      tech: ["GitHub", "Tool", "Development"],
+      color: "from-neon-blue to-neon-magenta",
+      url: "https://github-commit.vercel.app/"
+    },
+    {
+      id: 21,
+      src: "/img-21.png",
+      alt: "Tra Verse AI - Travel AI Assistant",
+      title: "Tra Verse AI",
+      description: "Intelligent AI-powered travel assistant that provides personalized recommendations, itinerary planning, and real-time travel insights",
+      category: "AI/ML",
+      tech: ["AI", "Travel", "Assistant"],
+      color: "from-neon-cyan to-neon-purple",
+      url: "https://tra-verse-ai.vercel.app/"
+    },
+    {
+      id: 22,
+      src: "/img-22.png",
+      alt: "Rise On - Personal Growth Platform",
+      title: "Rise On",
+      description: "Motivational platform focused on personal development, goal achievement, and building positive habits for long-term success",
+      category: "Self-Help",
+      tech: ["Motivation", "Goals", "Personal Growth"],
+      color: "from-neon-magenta to-neon-cyan",
+      url: "https://rise-on.vercel.app/"
+    },
+    {
+      id: 23,
+      src: "/img-23.png",
+      alt: "Wedding Vibes - Wedding Planning Platform",
+      title: "Wedding Vibes",
+      description: "Comprehensive wedding planning platform offering tools for venue selection, vendor management, and wedding day coordination",
+      category: "Lifestyle",
+      tech: ["Wedding", "Planning", "Events"],
+      color: "from-neon-purple to-neon-magenta",
+      url: "https://wedding-vibes.vercel.app/"
+    },
+    {
+      id: 24,
+      src: "/img-24.png",
+      alt: "3D Simulation - Interactive 3D Environment",
+      title: "3D Simulation",
+      description: "Immersive 3D simulation environment featuring interactive graphics, physics-based interactions, and advanced visualization capabilities",
+      category: "Gaming",
+      tech: ["3D", "Simulation", "Interactive"],
+      color: "from-neon-cyan to-neon-blue",
+      url: "https://3d-simulation.vercel.app/"
     }
   ];
 
@@ -291,8 +379,8 @@ export const ImageGallery = () => {
             Featured <span className="gradient-text animate-neon-flicker">Projects</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto font-rajdhani px-4">
-            A comprehensive showcase of 16 innovative projects spanning AI/ML, web development, gaming, healthcare,
-            and creative solutions. Click on any project to explore the live demos and see my work in action.
+            A comprehensive showcase of 24 innovative projects spanning AI/ML, web development, gaming, healthcare,
+            education, lifestyle, and creative solutions. Click on any project to explore the live demos and see my work in action.
           </p>
         </div>
 
